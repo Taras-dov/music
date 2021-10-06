@@ -1,0 +1,148 @@
+.dashboard-wrapper
+    margin-top: 38px
+    &__header
+        padding: 38px 0 36px 0
+        h3
+            font-style: normal
+            font-weight: 900
+            font-size: 26px
+            line-height: 34px
+            color: #1E92FE
+            margin-left: 46.5px
+
+    &__header
+        width: 1456px
+        height: 188px
+        left: 396px
+        top: 194px
+        background: #FFFFFF
+        box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.14221)
+        border-radius: 7px
+
+.dashboard-tabs
+    display: flex
+    justify-content: space-around
+    align-items: center
+    margin-top: 32px
+    width: 1382px
+    height: 48px
+    background-color: #E8F2FF
+    border-radius: 7px
+    margin-left: 36px
+
+    &__tab
+        font-style: normal
+        font-weight: normal
+        font-size: 20px
+        line-height: 27px
+        text-align: center
+        color: #00193f
+        width: 100%
+        padding: 10px 0
+        cursor: pointer
+        &-active
+            background-color: #1e92fe
+            color: #fff
+            &:first-child
+                border-radius: 5px 0px 0px 5px
+            &:last-child
+                border-radius: 0px 5px 5px 0px
+
+.dashboard-tab__content
+    width: 1456px
+    margin-top: 38px
+.dashboard-tab_wrapper
+    display: none
+    &:first-child
+        display: block
+    &-active
+        display: block
+.dashboard-tab__item
+    display: flex
+    justify-content: space-between
+.dashboard-window
+    width: 460px
+    min-height: 624px
+    left: 397px
+    top: 420px
+    background: #FFFFFF
+    box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.14221)
+    border-radius: 7px
+    padding: 21px 20px 20px 20px
+    &-title
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-left: 11px
+        &>h4
+            font-style: normal
+            font-weight: bold
+            font-size: 23px
+            line-height: 31px
+            color: #1E92FE
+        &>span
+            width: 20px
+            font-style: normal
+            font-weight: normal
+            font-size: 32px
+            line-height: 44px
+            color: #00193F
+            cursor: pointer
+    &__lists
+        margin: 30px 0 0 0
+    &__list
+        display: flex
+        justify-content: space-between
+        padding: 15px
+        &:hover
+            background: #ECF3FF
+            border-radius: 5px
+        &>span
+            width: 60px
+            font-style: normal
+            font-weight: normal
+            font-size: 16px
+            line-height: 22px
+            color: #FF4843
+            &.green
+                color: green
+            &.orange
+                color: orange
+    &_bookmarks
+        width: 1455px
+    &_drafts
+        min-height: 264px
+
+.custom-checkbox
+    position: absolute
+    z-index: -1
+    opacity: 0
+
+.custom-checkbox+label 
+    display: inline-flex
+    align-items: center
+    user-select: none
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 25px
+    color: #00193F
+
+
+.custom-checkbox+label::before 
+    content: ''
+    display: inline-block
+    width: 18px
+    height: 18px
+    flex-shrink: 0
+    flex-grow: 0
+    border: 2px solid #00193F
+    border-radius: 5px
+    margin-right: 13px
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: 50% 50%
+
+.custom-checkbox:checked+label::before
+    border-color: #0b76ef
+    background-color: #0b76ef

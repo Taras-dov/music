@@ -1,0 +1,2277 @@
+@media (max-width: 1024px)
+	.homepage, .jobs
+		header nav > ul > li:before
+			top: 30%
+@media (max-width: 425px)
+	a.button.free_premium
+		@include font(4.8vw, 6.67vw)
+		@include padding-block(2.93vw, 2.67vw)
+		border-radius: 1.33vw
+		margin-bottom: 4.27vw  /* 16/3.75 */
+	.with_slider
+		@include padding-block(27.2vw, 21.6vw)
+		.slider_items
+			width: 75.2vw
+			@include margin-inline(auto)
+			margin-bottom: 5.6vw
+		.owl-theme
+			.owl-dots
+				position: absolute
+				top: -7.2vw
+				left: 50%
+				width: 75.2vw
+				transform: translateX(-50%)
+				margin-top: 0!important
+				.owl-dot
+					span
+						width: 11.47vw
+						height: 1.33vw
+						border-radius: 1.47vw
+						@include margin-inline(1.2vw)
+		.button
+			@include font(4vw, 5.33vw)
+			padding: 1.07vw 5.33vw
+			border-radius: 1.33vw
+		.slider_title
+			max-width: 75.2vw
+			@include font(6.13vw, 7.47vw, bold)
+			margin-bottom: 29.6vw
+		.wrap
+			flex-direction: column-reverse
+			align-items: center
+		.right
+			width: 50.4vw
+			margin-bottom: 2.93vw
+		.left
+			margin: 0
+			text-align: center
+			flex-direction: column-reverse
+		.txt
+			max-width: 100%
+			@include font(3.73vw, 5.33vw, bold)
+		.author
+			@include font(4.8vw, 6.67vw, bold)
+			margin-bottom: 0
+		.position
+			display: inline-block
+			width: 33.87vw
+			@include margin-inline(auto)
+			@include font(3.73vw, 5.07vw, bold)
+			margin-bottom: 5.6vw
+	.payment_blc
+		@include mobile_block
+		.custom-checkbox + label::before
+				width: 3.2vw
+				height: 3.2vw
+				margin-right: 0
+		.head
+			padding: 5.07vw 0
+			border: none
+			justify-content: center
+			.select_payment
+				margin-right: 8.27vw
+			.pic_blc
+				width: 13.87vw
+				margin-right: 3.47vw
+		.body
+			padding: 0 4.27vw 5.6vw
+			flex-direction: column
+			label
+				width: 100%
+				@include font(4.27vw, 5.87vw)				
+				margin-bottom: 5.07vw
+				&.short
+					width: 100%
+				input
+					@include font(4.27vw, 5.87vw)
+					border-radius: 1.33vw
+					padding: 2.13vw
+		input[type="submit"]
+			width: 24vw!important
+			font-size: 4vw!important
+			line-height: 11.2vw!important
+			padding: 0!important
+			border-radius: 1.33vw
+			color: $color_white
+			background-color: $color_blue
+						
+	.questions
+		@include padding-block(32.8vw, 24vw)
+		.container
+			.title
+				@include font(5.87vw, 5.87vw)
+				padding: 0!important
+				margin-bottom: 12.8vw
+			.questions_items
+				flex-direction: column
+				align-items: center
+				.item
+					width: 87.73vw
+					text-align: center
+					&:not(:last-child)
+						margin-bottom: 13.33vw
+					.questions_title
+						@include font(4.27vw, 5.87vw)
+						margin-bottom: 3.47vw
+					.questions_description
+						@include font(4vw, 5.33vw)
+	/*WELCOME PAGE START*/
+	.facebook, .google
+		width: 26.13vw  /* 98/3.75 */
+		padding: 0.8vw  /* 3/3.75 */ 4.8vw  /* 18/3.75 */
+	.header__starts
+		display: none
+	header 
+		.header__logo
+			width: 47.2vw  /* 177/3.75 */
+			@include margin-inline(auto)
+			margin-bottom: 6.93vw  /* 26/3.75 */
+	section
+		&.top_blc
+			.top_blc__text_blc
+				width: 100%
+				.button
+					display: none
+			.container
+				flex-direction: column
+				padding: 0
+			.text_blc__title
+				max-width: 76.27vw  /* 286/3.75 */
+				@include font(9.07vw, 10.4vw)
+				margin: 6.4vw auto 3.73vw
+			.top_blc__pic_blc
+				width: 76.53vw  /* 287/3.75 */
+				@include margin-inline(auto)
+			.header__starts
+				display: flex
+				flex-direction: column-reverse
+				a
+					@include font(3.73vw, 5.07vw)
+					border-radius: 1.07vw  /* 4/3.75 */
+					padding: 0.8vw  /* 3/3.75 */ 3.2vw  /* 12/3.75 */ 0.53vw  /* 2/3.75 */ 2.67vw  /* 10/3.75 */
+					&.started.button
+						margin-bottom: 3.47vw  /* 13/3.75 */
+					&.log_in
+						color: $color_darkBlue
+						margin-bottom: 6.93vw  /* 26/3.75 */
+			.connect_text
+				text-align: center
+				@include font(3.73vw, 5.07vw)
+				margin-bottom: 3.73vw  /* 14/3.75 */
+		&.professionals
+			padding-top: 20.27vw  /* 76/3.75 */
+			.professionals__title
+				max-width: 75.73vw  /* 284/3.75 */
+				padding: 0
+				@include margin-inline(auto)
+				@include font(5.87vw, 7.2vw)
+				margin-bottom: 5.33vw  /* 20/3.75 */
+			.pic_blc
+				width: 85.33vw  /* 320/3.75 */
+				margin-bottom: 7.47vw  /* 28/3.75 */
+			.professionals__more
+				margin-top: 0
+				@include font(2.67vw, 2.67vw)
+		&.connect
+			padding-top: 13.07vw  /* 49/3.75 */
+			padding-bottom: 16.53vw  /* 62/3.75 */
+			.section_mark
+				@include font(3.73vw, 5.07vw)
+				margin-bottom: 1.87vw  /* 7/3.75 */
+			.connect__title
+				max-width: 73.6vw  /* 276/3.75 */
+				@include font(6.4vw, 8vw)
+				margin-bottom: 22.4vw  /* 84/3.75 */
+			.connect__items
+				display: block
+				width: 47.2vw  /* 177/3.75 */
+				margin-bottom: 13.6vw  /* 51/3.75 */
+				.item
+					width: 47.2vw  /* 177/3.75 */
+					.pic_blc
+						margin-bottom: 3.47vw
+					.name
+						@include font(4.27vw, 5.87vw)
+					.prof
+						@include font(3.73vw, 5.07vw)
+					.location
+						display: none
+			.owl-theme .owl-nav.disabled+.owl-dots
+				display: flex
+				justify-content: space-between
+				margin-top: 6.4vw  /* 24/3.75 */
+			.owl-theme .owl-dots .owl-dot
+				span
+					background: #7FBCF3
+				&.active span
+					background: $color_blue
+			.join.button
+				@include font(4vw, 5.33vw)
+				padding: 2.67vw  /* 10/3.75 */ 4vw  /* 15/3.75 */
+				border-radius: 1.6vw  /* 6/3.75 */
+				background-color: #1E92FE
+				color: $color_white
+		&.for_whom
+			@include padding-block(13.87vw, 18.67vw)
+			.section_mark
+				@include font(3.73vw, 5.07vw)
+				margin-bottom: 2.4vw  /* 9/3.75 */
+			.connect__title
+				max-width: 68.8vw  /* 258/3.75 */
+				@include font(6.4vw, 8.53vw)
+				margin-bottom: 14.4vw  /* 54/3.75 */
+			.for_whom__items
+				flex-direction: column
+				p
+					@include font(3.73vw, 5.33vw)
+					margin-bottom: 9.87vw  /* 37/3.75 */
+					padding-left: 8.27vw  /* 31/3.75 */
+					&:last-child
+						margin-bottom: 0
+					&:before
+						width: 3.73vw  /* 14/3.75 */
+						height: 2.4vw  /* 9/3.75 */
+						@include absolute(top, 50%, left, 0)
+		&.join_free
+			padding: 0
+			padding-bottom: 26.13vw  /* 98/3.75 */
+			background-color: transparent
+			.container
+				flex-direction: column
+			p
+				max-width: 57.6vw  /* 216/3.75 */
+				@include font(6.4vw, 8vw)
+				text-align: center
+				margin-bottom: 9.87vw  /* 37/3.75 */
+			.join.button
+				@include font(4vw, 5.33vw)
+				padding: 2.67vw  /* 10/3.75 */ 4vw  /* 15/3.75 */
+				border-radius: 1.6vw  /* 6/3.75 */
+	footer
+		padding: 6.67vw 6.93vw 13.33vw 5.6vw
+		.item.logo
+			.footer_logo
+				width: 44.53vw
+				line-height: 0!important
+		.title
+			@include font(5.33vw, 8.2vw)
+		
+		.row
+			flex-direction: column
+			.item
+				margin-bottom: 6.4vw  /* 24/3.75 */
+				&.logo
+					margin-bottom: 11.47vw  /* 43/3.75 */
+				&.theme
+					margin-bottom: 16.53vw  /* 62/3.75 */
+					a
+						width: 8vw  /* 30/3.75 */
+						height: 8vw  /* 30/3.75 */
+						margin: 0
+						&:not(:last-child)
+							margin-right: 3.73vw
+			&:first-child
+				a
+					@include font(4.27vw, 8.2vw)
+			&:last-child
+				flex-direction: column-reverse
+				a, p
+					@include font(3.2vw, 4.27vw)
+				a
+					padding-right: 2.573vw
+					margin-right: 2.573vw
+				.item:nth-child(2)
+					margin-left: 0
+					margin-bottom: 9.07vw  /* 34/3.75 */
+					p
+						line-height: 4.27vw
+	/*WELCOME PAGE END*/
+
+	/*HEADER PAGES START*/
+	header.pages
+		padding: 2.13vw  /* 8/3.75 */ 3.47vw  /* 13/3.75 */
+		margin: 4.8vw  /* 18/3.75 */ 2.67vw  /* 10/3.75 */
+		border-radius: 1.33vw  /* 5/3.75 */
+		.header__logo
+			display: none
+		.profile_info
+			&>a
+				width: 5.33vw  /* 20/3.75 */
+				height: 5.33vw  /* 20/3.75 */
+				&.message
+					width: 5.87vw  /* 22/3.75 */
+					height: 5.6vw  /* 21/3.75 */
+					margin-right: 0
+					&:after
+						top: 0
+						right: -1.07vw  /* -4/3.75 */
+				&.notice
+					margin-right: 5.6vw  /* 21/3.75 */
+				&:after
+					width: 2.13vw  /* 8/3.75 */
+					height: 2.13vw  /* 8/3.75 */
+			.profile_name
+				display: none
+		.left_side
+			.profile_photo
+				@include round-pic(7.73vw)
+				margin-right: 5.07vw  /* 19/3.75 */
+			label
+				.pic_blc
+					width: 3.73vw  /* 14/3.75 */
+					height: 3.73vw  /* 14/3.75 */
+			input[type=search]
+				width: 38.93vw  /* 146/3.75 */
+				@include font(3.73vw, 5.07vw)
+				border-radius: 6.67vw  /* 25/3.75 */
+				padding: 1.07vw  /* 4/3.75 */ 2.93vw  /* 11/3.75 */ 1.33vw  /* 5/3.75 */
+		.work_sub
+			position: fixed
+			display: none
+			top: initial
+			bottom: 0
+			left: 0
+			width: 100vw
+			padding-bottom: 24vw
+			padding-top: 9.33vw
+			background: #B7D8F5
+			border-radius: 4vw 4vw 0 0
+			column-count: 2
+			z-index: 2
+			li
+				border: none
+				text-align: center
+				margin-bottom: 9.07vw
+				&.btn
+					position: absolute
+					bottom: 14.13vw
+					left: 50%
+					transform: translateX(-50%)
+					&:after
+						content: ""
+						@include absolute(bottom, 0.15625vw, right, -1.302vw)
+						background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='10' viewBox='0 0 18 10'%3E%3Cg id='Default_Copy_2' data-name='Default Copy 2' transform='translate(0 10) rotate(-90)'%3E%3Cpath id='Shape' d='M8.193,17.708.724,10.65a2.242,2.242,0,0,1,0-3.3l1.5,1.414a.321.321,0,0,0,0,.472l7.47,7.057a.962.962,0,0,1,0,1.415,1.105,1.105,0,0,1-1.5,0ZM.724,7.35,8.193.293l1.5,1.415L2.22,8.764ZM8.193.293a1.105,1.105,0,0,1,1.5,0,.962.962,0,0,1,0,1.415Z' transform='translate(0)'/%3E%3C/g%3E%3C/svg%3E%0A") no-repeat center center
+							size: cover
+						width: 4.27vw
+						height: 2.13vw
+						cursor: pointer
+				a
+					@include font(3.73vw, 5.07vw, 600)
+					color: $color_darkBlue
+		nav
+			position: fixed
+			bottom: 0
+			left: 0
+			width: 100%
+			background: $color_white
+			box-shadow: 0 0.53vw 2.67vw 2.13vw rgba(37, 39, 38, 0.0838888)
+			border-radius: 4vw  /* 15/3.75 */ 4vw  /* 15/3.75 */ 0 0
+			padding: 5.33vw  /* 20/3.75 */ 6.93vw  /* 26/3.75 */
+			box-sizing: border-box
+			z-index: 2
+			&> ul
+				justify-content: space-between
+				&> li
+					margin-right: 0
+					&.work
+						&:after
+							display: none
+					a:before
+						top: 50%
+						width: 5.07vw  /* 19/3.75 */
+						height: 5.07vw  /* 19/3.75 */
+					&.current
+						a
+							p
+								display: block
+					&>a
+						@include font(3.73vw, 5.07vw)
+						padding-left: 3.2vw  /* 12/3.75 */
+						p
+							display: none
+	/*HEADER PAGES END*/
+
+	/*HEADER MARKETPLACE START*/
+	header.marketplace
+		.container
+			nav, .profile_info
+				display: none
+			.header__logo
+				width: 47.47vw
+				height: 11.73vw
+				@include margin-inline(auto)
+				margin-bottom: 0
+				.pic_blc
+					width: 11.73vw
+					height: 11.73vw
+					margin-right: 1.87vw
+				p
+					@include font(4.53vw, 6.13vw, 800)
+	/*HEADER MARKETPLACE END*/
+	
+	
+	/*SIGN IN PAGE START*/
+	.sign
+		header
+			@include padding-block(3.73vw, 6.93vw)
+			.container
+				padding: 0
+			.header__logo
+				width: 44.53vw  /* 167/3.75 */
+				@include margin-inline(auto)
+				margin-bottom: 0
+			.button.home
+				display: none
+		.title
+			max-width: 86vw
+			@include font(5.07vw, 6.93vw)
+			margin-bottom: 11.47vw  /* 43/3.75 */
+		form
+			max-width: 84.8vw  /* 318/3.75 */
+			padding: 6.67vw  /* 25/3.75 */ 5.33vw  /* 20/3.75 */
+			label
+				@include font(4.27vw, 5.87vw)
+				margin-bottom: 0.53vw  /* 2/3.75 */
+			input
+				&:not([type=submit])
+					@include font(4.27vw, 5.87vw)
+					padding: 2.13vw  /* 8/3.75 */ 2.93vw  /* 11/3.75 */
+					border-radius: 1.87vw  /* 7/3.75 */
+					margin-bottom: 5.33vw  /* 20/3.75 */
+				&[type=submit]
+					@include font(3.73vw, 5.07vw)
+					padding: 0.8vw  /* 3/3.75 */ 10.4vw  /* 39/3.75 */ 0.53vw  /* 2/3.75 */ 10.13vw  /* 38/3.75 */
+					border-radius: 1.33vw  /* 5/3.75 */
+			.connect_with
+				display: flex
+				flex-direction: column
+				align-items: center
+				@include margin-block(8.53vw, 3.47vw)
+				@include padding-block(5.07vw, 8.53vw)
+				margin-left: -5.33vw
+				width: calc(100% + 10.66vw)
+				p
+					@include font(3.2vw, 4.27vw)
+					margin-bottom: 5.33vw  /* 20/3.75 */
+				a
+					min-width: 33.07vw  /* 124/3.75 */
+					margin: 0
+					@include font(3.73vw, 5.07vw)
+					padding: 0.8vw  /* 3/3.75 */ 8.27vw  /* 31/3.75 */ 0.53vw  /* 2/3.75 */ 8vw  /* 30/3.75 */
+					border-radius: 1.33vw  /* 5/3.75 */
+					&:not(:last-child)
+						margin-bottom: 5.07vw  /* 19/3.75 */
+			.already
+				@include font(3.2vw, 4.27vw)
+	/*SIGN IN PAGE END*/
+	
+	/*FORGOT PAGE START*/
+	.resend p
+		max-width: 59.73vw  /* 224/3.75 */
+		@include margin-inline(auto)
+		@include font(4.27vw, 5.87vw)
+	/*FORGOT PAGE END*/
+
+	/*SIGN UP PAGE START*/
+	.sign_up 
+		header 
+			.copy
+				display: none
+		form 
+			.agree_text
+				max-width: 66.5vw  /* 249/3.75 */
+				@include font(3.2vw, 4.27vw)
+				margin-bottom: 6.4vw  /* 24/3.75 */
+			input[type=submit]
+				padding: 0.8vw  /* 3/3.75 */ 5.6vw  /* 21/3.75 */ 0.53vw  /* 2/3.75 */
+	/*SIGN UP PAGE END*/
+	
+	/*SIGN UP STEPS PAGE START*/
+	.sign_up_steps 
+		header
+			padding: 4vw  /* 15/3.75 */ 5.33vw  /* 20/3.75 */
+			.container
+				padding: 0
+			.header__logo
+				width: initial
+				display: flex
+				margin-bottom: 0
+				.pic_blc
+					width: 9.07vw  /* 34/3.75 */
+					height: 9.07vw  /* 34/3.75 */
+					margin-right: 1.33vw  /* 5/3.75 */
+				p
+					@include font(4.27vw, 5.87vw, 800)
+		main 
+			.container
+				max-width: 86.93vw  /* 326/3.75 */
+				.help
+					display: flex
+					align-items: center
+					margin-bottom: 13.07vw  /* 49/3.75 */
+					.pic_blc
+						@include round-pic(9.07vw)
+						min-width: 9.07vw
+						margin-right: 3.47vw
+					p
+						width: 64.27vw  /* 241/3.75 */
+						@include font(3.47vw, 4.8vw)
+						br
+							display: none
+		.steps
+			&> div
+				p
+					&:first-child
+						width: 8vw  /* 30/3.75 */
+						height: 8vw  /* 30/3.75 */
+						@include font(4.27vw, 5.87vw)
+						margin-bottom: 3.47vw  /* 13/3.75 */
+						&:before
+							width: 18vw
+							right: 8vw  /* 30/3.75 */
+					&:last-child
+						@include font(3.2vw, 4vw)
+		.step
+			width: 86.93vw  /* 326/3.75 */
+			label
+				@include font(4vw, 5.33vw)
+			select, input, .select, ul.professionals
+				@include font(4.27vw, 5.87vw)
+				@include margin-block(1.33vw, 6.13vw)
+				padding: 2.13vw  /* 8/3.75 */ 4vw  /* 15/3.75 */
+				border-radius: 1.87vw  /* 7/3.75 */
+			p
+				max-width: 66.4vw  /* 249/3.75 */
+				@include font(3.2vw, 4.27vw)
+			.select
+				p
+					@include font(4.27vw, 5.87vw)
+					padding: 0
+			
+				&.multi
+					margin-bottom: 4.53vw  /* 17/3.75 */
+					p
+						max-width: initial
+						background: $color_white
+					&~.selected
+						@include font(3.73vw, 5.07vw)
+						padding: 1.33vw  /* 5/3.75 */ 2.67vw  /* 10/3.75 */ 1.6vw  /* 6/3.75 */ 2.4vw  /* 9/3.75 */
+						border-radius: 1.87vw  /* 7/3.75 */
+						span
+							width: 3.2vw  /* 12/3.75 */
+							height: 2.13vw  /* 8/3.75 */
+							&:after
+								width: 3.2vw  /* 12/3.75 */
+								height: 2.13vw  /* 8/3.75 */
+								background-size: contain
+			ul.professionals
+				li
+					@include font(4.27vw, 5.87vw)
+					&:after
+						width: 2.13vw  /* 8/3.75 */
+						height: 1.6vw  /* 6/3.75 */
+						transition: none
+						top: 2.3vw  /* 12/3.75 */
+						@include transition
+					&.open:after
+						top: 2.3vw  /* 12/3.75 */
+						transform: rotate(0deg)
+						
+				&>li
+					margin-bottom: 2.67vw
+			ul.sub_professionals
+				position: initial
+				border: none
+				margin-left: 4vw
+				box-sizing: border-box
+			.add_pic__pic_blc
+				width: 30.13vw  /* 113/3.75 */
+				height: 30.13vw  /* 113/3.75 */
+				margin-bottom: 4.8vw  /* 18/3.75 */
+			.add_pic__title
+				@include font(3.47vw, 4.8vw)
+				@include margin-inline(auto)
+		form
+			.owl-item:last-child
+				.step
+					.container
+						display: flex
+						flex-direction: column-reverse
+			.owl-nav
+				max-width: 86.93vw  /* 326/3.75 */
+				button
+					&.owl-next, &.skip
+						@include font(4.53vw, 6.13vw)
+						padding: 1.07vw  /* 4/3.75 */ 4.8vw  /* 18/3.75 */ 1.33vw  /* 5/3.75 */ 4.8vw  /* 18/3.75 */ !important
+						border-radius: 0.8vw  /* 3/3.75 */
+						margin: 0
+					&.skip
+						border: 0.27vw solid $color_blue
+						margin-right: 13.87vw  /* 52/3.75 */
+						padding: 0.8vw  /* 3/3.75 */ 4.8vw  /* 18/3.75 */ 1.07vw  /* 4/3.75 */ 4.8vw  /* 18/3.75 */!important
+	/*SIGN UP STEPS PAGE END*/
+
+	.post_item
+		margin-bottom: 5.87vw  /* 22/3.75 */
+		.post_header
+			padding: 3.47vw  /* 13/3.75 */
+			.profile_info 
+				.profile_photo
+					width: 9.87vw  /* 37/3.75 */
+					height: 9.87vw  /* 37/3.75 */
+				.profile_text
+					p
+						@include font(3.2vw, 4.27vw)
+						&.profile_name
+							@include font(3.73vw, 5.07vw)
+						&.profile_online
+							display: none
+			.saved_post
+				width: 3.73vw  /* 14/3.75 */
+				height: 4.27vw  /* 16/3.75 */
+				margin-right: 5.07vw  /* 19/3.75 */
+			.header_action
+				span
+					width: 1.07vw  /* 4/3.75 */
+					height: 1.07vw  /* 4/3.75 */
+					&:not(:last-child)
+						@include margin-inline(0, 0.8vw)
+				.action_dropdown
+					width: 40vw
+					top: 5.33vw  /* 20/3.75 */
+					a
+						@include font(3.47vw, 4.8vw)
+						padding: 2.365vw 2.625vw 2.3125vw 7.292vw
+						&:before
+							width: 5.33vw  /* 20/3.75 */
+							height: 5.33vw  /* 20/3.75 */
+							left: 4.13vw
+		.post_description 
+			padding: 2.13vw  /* 8/3.75 */ 4.27vw  /* 16/3.75 */ 2.4vw  /* 9/3.75 */ 3.47vw  /* 13/3.75 */
+			p
+				@include font(3.47vw, 4.8vw)
+		.post_footer 
+			&> div
+				@include padding-block(2.67vw)
+				p
+					@include font(3.73vw, 5.07vw)
+					margin-left: 8vw  /* 30/3.75 */
+					&:before
+						width: 5.6vw  /* 21/3.75 */
+						height: 4.8vw  /* 18/3.75 */
+						left: -4.53vw  /* -17/3.75 */
+		.post_comments
+			padding: 2.67vw 3.73vw
+			padding-left: 0
+			.write_new
+				padding-left: 3.47vw
+				margin-bottom: 4.53vw
+				.profile_photo
+					width: 7.47vw
+					height: 7.47vw
+					margin-right: 2.93vw
+				label
+					width: calc(100% - 10.67vw)
+					input
+						@include font(3.47vw, 4.8vw)
+						padding: 1.33vw 2.13vw
+						border-radius: 1.87vw
+			.view_all
+				@include font(3.47vw, 4.8vw)
+				margin-left: 3.47vw
+		.writed_comments 
+			.item
+				padding-left: 8.8vw
+				margin-bottom: 2.67vw
+				.profile_photo
+					width: 6.67vw
+					height: 6.67vw
+					margin-right: 2.93vw
+				.item_body
+					width: calc(100% - 10.67vw)
+					margin-bottom: 3.73vw
+					.item_body__text
+						margin-bottom: 1.07vw
+						padding: 1.33vw 2.13vw
+						border-radius: 1.87vw
+						.item_text, .user_name, .view_more
+							@include font(3.47vw, 4.8vw)
+						.view_more
+							right: -10.4vw
+							bottom: -0.8vw
+							padding-right: 2.67vw
+							padding-left: 2.67vw
+					.item_interactive 
+						a, p
+							@include font(3.73vw, 5.07vw)
+						.likes
+							margin-right: 2.67vw
+						.likes_qwt
+							width: 15.73vw
+							border-radius: 1.87vw
+							margin-top: -4vw
+							padding-left: 8.27vw
+							padding-top: 1.07vw
+							padding-bottom: 0.8vw
+							font-size: 3.47vw
+							line-height: 4.8vw
+							&:before
+								left: 4.53vw
+								width: 4.27vw
+								height: 3.73vw
+								
+				.view_answer
+					margin-bottom: 2.67vw
+					a
+						@include font(4.27vw, 5.87vw)
+						margin-left: 10.67vw
+						&:before
+							width: 3.73vw
+							height: 2.67vw
+							left: 0
+	
+	
+	/*HOMEPAGE START*/
+	.homepage
+		footer
+			display: none
+		main
+			padding: 0
+			.left_sidebar, .right_sidebar
+				display: none
+			.content
+				width: 100%
+				margin: 0 2.67vw  /* 10/3.75 */ 15.73vw  /* 59/3.75 */
+				.post_list
+					.time_line
+						margin-bottom: 2.67vw  /* 10/3.75 */
+				.new_post_add
+					margin-bottom: 4.53vw  /* 17/3.75 */
+					.add_post__text
+						padding: 3.2vw  /* 12/3.75 */ 3.47vw  /* 13/3.75 */
+						.newPost
+							margin-right: 3.47vw  /* 13/3.75 */
+							.pic_blc
+								width: 5.07vw  /* 19/3.75 */
+								height: 5.6vw  /* 21/3.75 */
+								img
+									width: 100%
+						.profile_photo
+							display: none
+						.title
+							@include font(3.73vw, 5.07vw)
+							span
+								@include font(3.73vw, 5.07vw)
+					.add_post__media
+						display: none
+				.post_list 
+					.time_line 
+						.time_line__title
+							@include font(4.27vw, 5.87vw)
+						.time_line__items
+							display: none			
+	/*HOMEPAGE END*/
+
+	/*JOBS START*/
+	.jobs
+		.body-wrapper
+			max-width: 100%
+			@include margin-inline(2.67vw)
+		.jobs-block
+			max-width: 100%
+			height: 33.87vw  /* 127/3.75 */
+			border-radius: 1.33vw  /* 5/3.75 */
+			margin-bottom: 4.27vw  /* 16/3.75 */
+			h1
+				@include font(5.33vw, 7.2vw)
+			p
+				@include font(4.27vw, 5.87vw)
+		.search-block
+			padding: 0
+			form
+				flex-direction: column
+				.search-block__search-job, .search-block__location
+					position: relative
+					margin-bottom: 4.27vw
+					&:before
+						content: ""
+						@include absolute(top, 50%, left, 8.27vw)
+						background: url("/img/icons/search_dark.svg") no-repeat center center
+							size: contain
+						width: 5.6vw  /* 21/3.75 */
+						height: 5.6vw  /* 21/3.75 */
+				.search-block__find-a-job
+					margin-bottom: 7.47vw  /* 28/3.75 */
+				input
+					width: 100%
+					@include font(4.27vw, 5.87vw)
+					height: initial
+					color: $color_border
+					@include padding-block(2.93vw)
+					box-sizing: border-box
+					border-radius: 1.33vw  /* 5/3.75 */
+					&::placeholder
+						@include font(4.27vw, 5.87vw)
+						color: $color_border
+					&:not([type="submit"])
+						padding-left: 14.4vw  /* 54/3.75 */
+		.select-job-top
+			flex-wrap: wrap
+			margin-bottom: 6.13vw  /* 23/3.75 */
+		.select-job__jobs-count
+			width: 100%
+			height: initial
+			border-radius: 1.33vw  /* 5/3.75 */
+			margin-bottom: 7.47vw  /* 28/3.75 */
+			a
+				padding-bottom: 3.47vw  /* 13/3.75 */
+				p
+					&:first-child
+						@include font(13.87vw, 18.93vw, 200)
+						@include margin-block(6.13vw, 4.8vw)
+					&:last-child
+						@include font(4vw, 5.33vw)
+						margin-top: 0
+		.select-job__post-a-job
+			display: flex
+			align-items: center
+			justify-content: space-between
+			width: 100%
+			max-width: 100%
+			margin-left: 0
+			a
+				width: 47.7%
+				max-width: 44.53vw  /* 167/3.75 */
+				@include padding-block(4vw, 3.47vw)
+				padding-left: 3.73vw  /* 14/3.75 */
+				border-radius: 1.33vw  /* 5/3.75 */
+				.pic_blc
+					width: 3.73vw  /* 14/3.75 */
+					height: 4.27vw  /* 16/3.75 */
+					margin-right: 1.87vw  /* 7/3.75 */
+					display: flex
+					align-items: center
+					justify-content: center
+				p
+					@include font(4vw, 1, bold)
+			.filters_open
+				display: flex
+				align-items: center
+				border: 0.27vw solid $color_blue
+				box-sizing: border-box
+				p
+					color: $color_blue
+			.post_job
+				flex-direction: row
+				justify-content: flex-start
+				.pic_blc
+					width: 5.33vw  /* 20/3.75 */
+					height: 5.33vw  /* 20/3.75 */
+					margin-bottom: 0
+		.select-job__jobs-filter
+			display: none
+			position: fixed
+			top: 0
+			left: 0
+			width: 100%
+			height: calc(100vh - 15vw)
+			overflow: auto
+			background: #F2F4F8
+			z-index: 1
+			.mobile_title, .form_submit
+				display: block
+				padding: 5.33vw  /* 20/3.75 */ 6.67vw  /* 25/3.75 */ 5.87vw  /* 22/3.75 */
+			.mobile_title
+				@include font(5.33vw, 7.2vw, bold)
+				color: $color_blue
+				border-bottom: 0.27vw solid $color_blue
+			.form_submit
+				display: flex
+				align-items: center
+				justify-content: space-between
+				padding-top: 9.07vw  /* 34/3.75 */
+				input
+					width: 22.93vw  /* 86/3.75 */
+					@include font(4.53vw, 6.13vw)
+					@include padding-block(1.07vw, 1.33vw)
+					text-align: center
+					border-radius: 1.33vw  /* 5/3.75 */
+					@include transition
+					&[type="reset"]
+						border: 0.27vw solid $color_blue
+						color: $color_blue
+						&:hover
+							color: $color_white
+							background-color: $color_blue
+							cursor: pointer
+					&[type="submit"]
+						color: $color_white
+						background-color: $color_blue
+						&:hover
+							background-color: $color_lightBlue
+							cursor: pointer
+		.select-job__showing-jobs
+			width: 100%
+			@include margin-block(0, 0.8vw)
+			.dropdown
+				display: none
+		.showing-jobs__showing-quantity-text
+			p
+				@include font(4.8vw, 11.2vw)
+		.select-job-result
+			max-width: 100%
+			padding: 8vw  /* 30/3.75 */
+			padding-bottom: 17.6vw  /* 66/3.75 */
+			border-radius: 1.33vw  /* 5/3.75 */
+			.result_item
+				width: 100%
+				border-radius: 1.87vw  /* 7/3.75 */
+				padding: 4.53vw  /* 17/3.75 */ 3.47vw  /* 13/3.75 */ 4.53vw  /* 17/3.75 */ 4.27vw  /* 16/3.75 */
+				margin-bottom: 7.47vw  /* 28/3.75 */
+				.add_post_time
+					@include font(3.73vw, 5.07vw)
+					margin-bottom: 0.8vw  /* 3/3.75 */
+				.company_info
+					margin-bottom: 6.13vw  /* 23/3.75 */
+					.company_logo
+						width: 8.8vw  /* 33/3.75 */
+						height: 8.8vw  /* 33/3.75 */
+						margin-right: 1.6vw  /* 6/3.75 */
+						margin-top: 0
+					.company_name
+						@include font(3.73vw, 5.07vw)
+				.vacancy_name
+					max-width: 47.73vw  /* 179/3.75 */
+					@include font(4.8vw, 6.67vw)
+					margin-bottom: 5.6vw  /* 21/3.75 */
+				.vacancy_info
+					margin-bottom: 7.2vw  /* 27/3.75 */
+					p
+						@include font(4.27vw, 5.87vw)
+						padding-left: 7.2vw  /* 27/3.75 */
+						&:before
+							left: 2.67vw  /* 10/3.75 */
+					.vacancy_info__type
+						margin-right: 6.4vw  /* 24/3.75 */
+						&:before
+							width: 5.33vw  /* 20/3.75 */
+							height: 5.33vw  /* 20/3.75 */
+					.vacancy_info__location:before
+						width: 4.53vw  /* 17/3.75 */
+						height: 5.07vw  /* 19/3.75 */
+				.result_item__footer
+					p
+						@include font(3.73vw, 5.07vw)
+						border-radius: 1.87vw  /* 7/3.75 */
+						&.easy
+							padding: 1.33vw  /* 5/3.75 */ 4vw  /* 15/3.75 */ 1.6vw  /* 6/3.75 */
+						&.group
+							padding: 1.6vw  /* 6/3.75 */ 1.87vw  /* 7/3.75 */ 1.33vw  /* 5/3.75 */ 5.87vw  /* 22/3.75 */
+							&:before
+								width: 2.4vw  /* 9/3.75 */
+								height: 2.4vw  /* 9/3.75 */
+								left: 3.2vw  /* 12/3.75 */
+		
+		.jobs-alert
+			display: none
+		.dropdown-check-list
+			width: 100%
+			border-bottom: 0.27vw solid $color_blue
+			margin-top: 0
+			padding: 5.33vw  /* 20/3.75 */ 6.67vw  /* 25/3.75 */ 5.87vw  /* 22/3.75 */
+			.anchor
+				width: initial
+				@include font(4.27vw, 5.87vw)
+				color: $color_blue
+				margin-bottom: 3.2vw  /* 12/3.75 */
+				&:after
+					display: none
+			ul.items
+				display: block
+				li 
+					label
+						@include font(3.73vw, 5.07vw)
+					&:not(:last-child)
+						margin-bottom: 2.93vw  /* 11/3.75 */
+					span
+						display: none
+	.custom-checkbox + label::before
+		width: 4.53vw  /* 17/3.75 */
+		height: 4.53vw  /* 17/3.75 */
+		margin-right: 4.53vw  /* 17/3.75 */
+	/*JOBS END*/
+	
+	/*JOBS DESCRIPTION START*/
+	.jobdescription-mainpicture
+		border-radius: 1.33vw
+	a.jobdescription-company__logolink
+		display: inline-block
+		margin-top: -10.13vw
+		margin-bottom: 2.67vw
+		position: initial
+		.pic_blc
+			width: 20.27vw
+			height: 20.27vw
+	h1.jobdescription-company__vacancy, h1.companypage-company__vacancy
+		@include font(3.73vw, 5.33vw)
+		margin-top: 0
+		margin-bottom: 1.33vw
+	div.jobdescription-company__link, .companypage-company__link
+		align-items: baseline
+		div a, h3
+			@include font(3.73vw, 5.33vw)
+		h3
+			margin-left: 4.53vw
+			padding-left: 5.07vw
+	.job_description, .company
+		.body-wrapper
+			max-width: 94.93vw
+			padding-bottom: 7.47vw
+			
+	.job_description		
+		div.jobdescription-company
+			flex-direction: column
+			height: auto
+		div.jobdescription__vacancy
+			width: initial
+		.jobdescription-requirements
+			width: calc(100% + 4.583vw)
+			margin-left: -4.583vw
+			flex-direction: column
+			border-radius: 1.87vw
+			@include padding-block(6.13vw, 6.67vw)
+		div.jobdescription-requirements-div
+			width: 100%
+			align-items: center
+			padding: 0
+			&:not(:last-child)
+				margin-bottom: 7.73vw
+		.jobdescription-requirements-divcentr
+			border: none
+		.jobdescription-requirements__ptop
+			@include font(3.73vw, 5.33vw)
+			margin-bottom: 0.27vw
+		.jobdescription-requirements__pbottom
+			@include font(4.8vw, 5.33vw)
+		div.jobdescription-company__liketop
+			margin-top: 5.6vw
+			margin-bottom: 12.27vw
+		div.jobdescription-company__like
+			width: auto
+			align-items: center
+			div
+				a
+					margin: 0
+					&:not(:nth-child(2))
+						margin-right: 6.93vw
+				.jobdescription__like, .jobdescription__link
+					width: 11.2vw
+					height: 11.2vw
+				.jobdescription__like
+					order: 2
+				.jobdescription__link
+					order: 3
+				a.jobdescription__linkbutton
+					font-size: 4vw
+					line-height: 11.2vw
+					padding: 0 5.33vw
+					width: auto
+					border-radius: 1.33vw
+					order: 1
+		.jobdescription-company__posted
+			flex-direction: column
+			h3
+				@include font(3.73vw, 5.33vw)
+				text-align: center
+				&:first-child
+					margin-bottom: 1.6vw
+				&:last-child
+					border: none
+					padding: 0
+		.jobdescription-headerdescription
+			margin-bottom: 11.73vw
+		.jobdescription-bodydescription
+			p:nth-child(3)
+				margin-bottom: 12vw
+			h3
+				@include font(4.53vw, 6.13vw)
+				@include margin-block(0, 0.8vw)
+		.jobdescription-bodydescription__p
+			@include font(3.73vw, 7.73vw)
+			margin-bottom: 5.07vw
+		.jobdescription-bodydescription__ul
+			margin-bottom: 12vw
+			li
+				@include font(3.73vw, 5.07vw)
+				margin-bottom: 0.8vw
+				padding-left: 3.2vw
+				&:before
+					position: absolute
+					width: 1.87vw
+					height: 1.87vw
+					top: 1.6vw
+					left: 0
+			
+	/*JOBS DESCRIPTION END*/
+	
+	/*NETWORK PAGE START*/
+	.network
+		main
+			.container
+				flex-direction: column
+				width: 94.93vw  /* 356/3.75 */
+				.left_side
+					width: 100%
+					.my_network
+						border-radius: 1.33vw  /* 5/3.75 */
+						margin-bottom: 4.27vw  /* 16/3.75 */
+						.title
+							@include font(4vw, 5.33vw)
+							padding: 4.53vw  /* 17/3.75 */ 3.47vw  /* 13/3.75 */ 2.13vw  /* 8/3.75 */
+						ul
+							display: flex
+							padding: 0
+							li	
+								display: flex
+								flex-direction: column
+								align-items: center
+								flex: 1
+								padding: 4vw  /* 15/3.75 */ 0 3.2vw  /* 12/3.75 */
+								&:not(:last-child)
+									border-right: 0.53vw solid $color_borderLight
+								&:before
+									display: none
+								p
+									&:first-child
+										@include font(4.27vw, 5.87vw)
+									&:last-child
+										@include font(4vw, 5.33vw)
+					.banner, .grow_network, .sidebar_footer
+						display: none
+				.content
+					width: 100%
+					.blc_header
+						padding: 3.73vw  /* 14/3.75 */ 3.47vw  /* 13/3.75 */ 3.2vw  /* 12/3.75 */
+						p
+							@include font(3.73vw, 5.07vw)
+						a
+							@include font(3.47vw, 4.8vw)
+					.pending
+						margin-bottom: 4.27vw  /* 16/3.75 */
+						.blc_body
+							padding: 4vw  /* 15/3.75 */ 4vw  /* 15/3.75 */ 4.53vw  /* 17/3.75 */
+							.item
+								&:not(:last-child)
+									margin-bottom: 2.4vw  /* 9/3.75 */
+								.profile_photo
+									width: 9.87vw  /* 37/3.75 */
+									height: 9.87vw  /* 37/3.75 */
+									margin-right: 2.13vw  /* 8/3.75 */
+								.profile_info
+									.name
+										@include font(3.73vw, 5.07vw)
+									.prof
+										@include font(3.2vw, 4.27vw, normal)
+										color: $color_timeline
+									.other
+										display: none
+								.menage
+									display: flex
+									align-items: center
+									.button
+										@include font(3.73vw, 5.07vw, bold)
+										padding: 1.07vw  /* 4/3.75 */ 2.4vw  0.8vw  /* 3/3.75 */ 2.67vw 
+										border-radius: 1.33vw  /* 5/3.75 */
+										&:not(:last-child)
+											margin-right: 2.13vw  /* 8/3.75 */
+										&.blk
+											position: relative
+											display: inline-block
+											width: 6.13vw  /* 23/3.75 */
+											height: 6.13vw  /* 23/3.75 */
+											padding: 0
+											&:before
+												content: ""
+												@include absolute()
+												width: 3.47vw  /* 13/3.75 */
+												height: 3.47vw  /* 13/3.75 */
+												background: url("/img/icons/close.svg") no-repeat center center
+													size: cover
+											&:hover
+												filter: invert(1)
+												background-color: $color_white
+												border-color: $color_white
+					.network_with
+						margin-bottom: 4.27vw  /* 16/3.75 */
+						.blc_header 
+							a
+								display: none
+						.blc_body
+							box-sizing: border-box
+							padding: 3.2vw  /* 12/3.75 */ 0 6.67vw  /* 25/3.75 */ 5.33vw  /* 20/3.75 */
+							.item
+								width: 37.6vw  /* 141/3.75 */
+								.header_pic
+									height: 13.87vw  /* 52/3.75 */
+								.profile_photo
+									width: 13.07vw  /* 49/3.75 */
+									height: 13.07vw  /* 49/3.75 */
+									@include margin-block(-6.67vw, 1.6vw)
+								.profile_name
+									@include font(3.73vw, 5.07vw)
+									margin-bottom: 0
+								a.group_link
+									@include font(3.73vw, 5.07vw)
+									margin-bottom: 0.53vw  /* 2/3.75 */
+								p.prof
+									@include font(3.73vw, 5.07vw)
+									margin-bottom: 4.53vw  /* 17/3.75 */
+								.item_footer
+									p
+										@include font(3.2vw, 4.27vw)
+										margin-bottom: 1.33vw  /* 5/3.75 */
+									a.button
+										@include font(3.73vw, 5.07vw)
+										border-radius: 1.33vw  /* 5/3.75 */
+										padding: 0.8vw  /* 3/3.75 */ 4vw  /* 15/3.75 */ 0.53vw  /* 2/3.75 */ 4.27vw  /* 16/3.75 */
+										margin-bottom: 2.93vw  /* 11/3.75 */
+	/*NETWORK PAGE START*/
+
+	/*GROW NETWORK START*/
+	.grow-network
+		padding-bottom: 5.33vw
+		main 
+			.container
+				width: 94.93vw
+				.title_blc
+					padding: 9.33vw 4.27vw 4.53vw
+					border-radius: 1.33vw
+					margin-bottom: 11.47vw
+					.title
+						@include font(5.33vw, 7.2vw)
+					.subtitle
+						@include font(4.27vw, 5.87vw)
+						br
+							display: initial
+				.grow_item
+					width: 88.53vw
+					@include margin-inline(auto)
+					.item__title_blc
+						margin-bottom: 4.8vw
+						p
+							@include font(5.07vw, 6.93vw)
+						a
+							display: none
+					form
+						margin-bottom: 6.4vw
+						p
+							@include font(3.73vw, 5.07vw)
+							padding-left: 6.13vw
+							margin-bottom: 4vw
+							&:before
+								width: 3.2vw
+								height: 3.2vw
+								left: 1.6vw
+						input
+							&[type=email]
+								width: 100%
+								@include font(4.27vw, 5.87vw)
+								border-radius: 1.87vw
+								padding: 2.13vw
+								margin-bottom: 4.8vw
+							&[type="submit"]
+								@include font(3.73vw, 5.07vw)
+								padding: 0.8vw 4.53vw 0.53vw
+								border-radius: 1.33vw
+					.another
+						display: block
+						p, a
+							@include font(3.73vw, 5.07vw)
+						p
+							margin-bottom: 4vw
+						.button
+							width: 21.6vw
+							border-radius: 1.33vw
+							&:not(:last-child)
+								margin-right: 3.47vw
+					&.email
+						form
+							textarea
+								height: 63.47vw
+								@include font(4.27vw, 5.87vw)
+								padding: 2.67vw 3.47vw
+								margin-bottom: 8vw
+							ul
+								margin-bottom: 5.6vw
+								li:not(:last-child)
+									margin-bottom: 3.47vw
+								label
+									position: relative
+									@include font(3.73vw, 5.07vw)
+									padding-left: 9.07vw
+									&:before
+										position: absolute
+										top: 0.53vw
+										left: 0
+							input[type="submit"]
+								@include font(3.73vw, 5.07vw)
+								padding: 0.8vw 8.27vw 0.53vw
+								border-radius: 1.33vw
+					&.csv
+						.upload__file
+							flex-direction: column
+							.drop_zone
+								width: 100%
+								@include padding-block(6.93vw)
+								margin-bottom: 12.53vw
+								p, .upload
+									@include font(4.27vw, 5.87vw, normal)
+								p
+									margin-bottom: 5.87vw
+								.upload
+									padding: 1.07vw 5.6vw 1.33vw
+									border-radius: 1.87vw
+							.button_blc
+								width: 100%
+							.upload__file_confirm
+								margin-bottom: 5.87vw
+								p
+									&:first-child
+										width: 10.67vw
+										height: 10.67vw
+										@include font(3.47vw, 4.8vw)
+										border-radius: 1.87vw
+										margin-right: 2.67vw
+									&:nth-child(2)
+										@include font(3.73vw, 5.07vw)
+								span
+									width: 6.4vw
+									height: 6.4vw
+							input[type=submit]
+								width: 32.27vw
+								@include font(3.73vw, 5.07vw)
+								@include padding-block(0.8vw, 0.53vw)
+				.learn_more
+					width: 71.73vw
+					@include font(3.73vw, 5.07vw)
+					margin-bottom: 6.4vw
+					@include margin-inline(3.73vw)
+	/*GROW NETWORK END*/
+	
+	/*MARKETPLACE PAGE START*/
+	.marketplace
+		.container
+			width: 100%
+			max-width: 100%
+		.banner
+			text-align: center
+			max-height: initial
+			.container
+				@include padding-block(18.67vw, 7.47vw)
+			.button
+				@include font(4vw, 5.33vw)
+				padding: 1.07vw 4.27vw
+				border-radius: 1.33vw
+				&:not(:last-child)
+					margin-right: 4.53vw
+				&.provider
+					display: inline-block				
+		.banner_title
+			max-width: 43.73vw
+			@include font(6.4vw, 8vw)
+			@include margin-inline(auto)
+			margin-bottom: 5.87vw
+		.popular_categories
+			padding-top: 12.8vw
+			padding-bottom: 16.27vw
+		.popular_title
+			max-width: 43.73vw
+			@include font(6.4vw, 8vw)
+			@include margin-inline(auto)
+			margin-bottom: 7.73vw
+		.popular_categories_list
+			display: block
+		.popular_categories_list_item
+			width: 87.47vw
+			height: 66.13vw
+			box-shadow: 0 0.53vw 2.4vw rgb(0 0 0 / 14%)
+			border-radius: 1.33vw
+			&:not(:last-child)
+				margin-bottom: 7.73vw
+			a
+				@include font(5.33vw, 16vw, bold)
+				margin-left: 5.6vw
+		.tick
+			padding-top: 16.8vw
+			padding-bottom: 19.73vw
+		.tick_title
+			max-width: 68.8vw
+			@include font(6.4vw, 8vw)
+			margin-bottom: 15.2vw
+		.tick_list
+			flex-direction: column
+			max-width: 25.33vw
+			padding: 0
+			margin-left: 43.47vw
+		.tick_list_item
+			@include font(3.73vw, 5.33vw, bold)
+			&:not(:last-child)
+				margin-bottom: 9.87vw
+			&:before
+				left: -13.6vw
+				top: 50%
+				width: 3.73vw
+				height: 2.4vw
+				border-bottom: 0.53vw solid #1E92FE
+				border-left: 0.53vw solid #1E92FE
+				transform: rotate(315deg) translateY(-50%)
+		.more_categories
+			@include padding-block(13.07vw, 11.47vw)
+			.much_more
+				display: block
+				margin-top: 5.6vw
+				@include font(4.8vw, 7.2vw, 300)
+		.more_title
+			@include font(6.13vw, 7.47vw)
+			margin-bottom: 8.53vw
+		.categories_list
+			column-count: 1
+			text-align: center
+		.categories_list_item
+			&:nth-child(n+10)
+				display: none
+			a
+				@include font(4.8vw, 11.73vw)
+	/*MARKETPLACE PAGE END*/
+	
+	/*COMPANY PAGE START*/
+	.company
+		.banner
+			margin-top: 10.13vw
+			padding: 33.6vw 3.2vw 2.4vw
+			border-radius: 1.33vw
+			.title
+				@include font(5.33vw, 7.2vw)
+				margin-bottom: 2.13vw
+			.text
+				width: 48vw
+				@include font(4vw, 6.13vw)
+				margin-bottom: 8.53vw
+			.banner_footer 
+				.learn_more
+					width: 38.13vw
+					text-align: center
+					@include font(4.27vw, 5.87vw)
+					@include padding-block(1.87vw)
+					border-radius: 1.33vw
+				p
+					@include font(4.27vw, 5.87vw)
+					
+	.companypage-wrapper
+		flex-direction: column
+		@include padding-inline(4.8vw)
+	.companypage-headercompanypage, .companypage-blog__wrapper
+		width: 100%
+	.companypage-blog
+		display: none
+	.companypage-company
+		display: flex
+		flex-direction: column
+	.companypage-name
+		order: 1
+	.companypage-company__link
+		order: 2
+	.companypage-company__buttons
+		order: 3
+		margin-top: 5.33vw
+		justify-content: flex-start
+		.button
+			width: 30.93vw
+			@include font(4vw, 11.2vw)
+			padding: 0
+			text-align: center
+			border-radius: 1.33vw
+			&:not(:nth-child(2))
+				margin-right: 3.2vw
+	.companypage-company__menu
+		order: 4
+	div.companypage-company__menu
+		ul
+			margin-top: 7.73vw
+			width: 100%
+			flex-direction: column
+			border-radius: 1.33vw
+			li
+				a
+					@include font(4vw, 8.8vw)
+					height: auto
+					&:hover
+						border-radius: 1.33vw
+				&.ui-tabs-active a
+					border-radius: 1.33vw
+	a.companypage-company__dotslinks
+		position: absolute
+		width: 9.33vw
+		height: 9.33vw
+		top: -8.53vw
+		right: 0
+	span.companypage-company__dotslink
+		width: 1.33vw
+		height: 1.33vw
+		&:before, &:after
+			width: 1.33vw
+			height: 1.33vw
+		&:before
+			right: 2.4vw
+		&:after
+			left: 2.4vw
+	.companypage-body
+		margin-top: 9.07vw
+		h3.jobdescription
+			@include font(4.53vw, 6.13vw)
+		p
+			@include font(3.73vw, 5.07vw)
+	.companydetails-blocks
+		flex-direction: column
+	.companydetails-blocks__divflex1, .companydetails-blocks__divflex2
+		width: 100%
+	#tabs-2, #tabs-3, #tabs-5
+		.jobdescription
+			display: none
+	.companydetails__websiteurl
+		@include font(3.73vw, 5.07vw)
+		margin-bottom: 4.8vw
+	p.companydetails__bold22
+		margin-bottom: 0.8vw
+	p.companydetails__regular18
+		margin-bottom: 4.8vw
+	div.companypagejobs-openjobsblock
+		padding: 3.73vw 3.47vw 4.53vw 4.27vw
+		border-radius: 1.87vw
+	#tabs-4
+		.select-job-result
+			width: calc(100% + 9.6vw)
+			max-width: initial
+			background: #FFFFFF
+			box-shadow: 0 0.53vw 2.4vw rgb(0 0 0 / 14%)
+			border-radius: 1.33vw
+			margin-left: -4.8vw
+			padding: 8vw
+			.result_item
+				padding: 3.73vw 3.47vw 4.53vw 4.27vw
+				background-color: $color_body
+				.add_post_time
+					@include font(3.73vw, 5.07vw)
+				&:last-child
+					margin-bottom: 0
+	div.companypageemployees-employees-grid
+		flex-direction: column
+		max-width: initial
+		width: calc(100% + 9.6vw)
+		margin-left: -4.8vw
+	div.companypageemployees-employees__item
+		width: 100%
+		border-radius: 1.33vw
+		margin-bottom: 4.53vw
+		padding: 3.2vw 3.47vw 3.73vw
+		box-sizing: border-box
+	div.companypageemployees__userphoto
+		width: 9.87vw
+		height: 9.87vw
+		margin: 0
+		margin-right: 2.13vw
+	p.companypageemployees__username
+		color: $color_border
+	p.companypageemployees__artist
+		@include font(3.2vw, 4.27vw)
+		color: $color_timeline
+	/*COMPANY PAGE END*/
+	
+	/*PROFILE PAGE START*/
+	.profile_page
+		main
+			.right_sidebar
+				display: none
+			.content
+				width: 100%
+				margin-left: 0
+				margin-top: -6.13vw
+			.container
+				width: 94.93vw
+			section
+				&.head_blc
+					margin-top: 0
+					.pic_blc
+						border-radius: 1.33vw
+					.photo_blc
+						width: 21.87vw
+						height: 21.87vw
+						border-width: 1.07vw
+						margin-top: calc(-21.87vw / 2)
+						margin-bottom: 0
+				&.info_blc
+					margin-bottom: 5.87vw
+					.action_button
+						margin-bottom: 2.93vw
+						.button
+							display: none
+						.edit
+							width: 5.33vw
+							height: 5.33vw
+					.name
+						@include font(5.33vw, 5.33vw)
+						margin-bottom: 1.87vw
+					.info_blc__text
+						@include font(4.27vw, 5.6vw)
+						p
+							padding-right: 2.93vw
+							margin-right: 2.93vw
+						.contact_info
+							display: none
+				&.ember_view
+					flex-direction: column
+					.ember_item
+						width: 100%
+						padding: 2.67vw 4.8vw 1.87vw
+						border-radius: 1.87vw
+						&:first-child
+							margin-bottom: 3.73vw
+						&:last-child
+							margin-bottom: 10.67vw
+						&.selected:after
+							top: 3.73vw
+							right: -2.67vw
+							width: 7.47vw
+							height: 7.47vw
+						.title
+							@include font(4.27vw, 5.33vw)
+							margin-bottom: 0.53vw
+						.description
+							@include font(4vw, 5.33vw)
+							margin-bottom: 2.93vw
+						a
+							@include font(4.27vw, 5.33vw)
+				&.strengthen_profile
+					display: none
+				&.dashboard 
+					.title
+						@include font(4.8vw, 11.2vw)
+						margin-bottom: 0
+					.dashboard_items
+						@include mobile_block
+						.item
+							@include padding-block(6.13vw, 2.93vw)
+							p
+								&:first-child
+									@include font(12.8vw, 17.33vw)
+									margin-bottom: 2.67vw
+								&:last-child
+									@include font(3.73vw, 4.53vw)
+									width: 26.67vw
+									@include margin-inline (auto)
+				&.item
+					@include mobile_block
+					&>.head
+						padding: 3.73vw 3.47vw 3.2vw
+						border-bottom: 0.53vw solid #E8ECF4
+						p.title
+							@include font(3.73vw, 5.07vw)
+						a.add
+							width: 4.27vw
+							height: 4.27vw
+							display: block
+							margin-left: auto
+							margin-right: 5.33vw
+							img
+								width: 100%
+								transform: rotate(45deg)
+						.pic_blc
+							width: 4.27vw
+							height: 4.27vw
+					.body
+						@include font(3.73vw, 4.27vw)
+						@include padding-block(3.2vw, 5.6vw)
+					.footer
+						@include padding-block(1.87vw, 2.4vw)
+						a
+							@include font(3.47vw, 4.8vw)
+					.experience_item
+						@include padding-inline(3.47vw)
+						&:not(:first-child)
+							padding-top: 4.27vw
+						&:not(:last-child)
+							padding-bottom: 4.53vw
+							border-bottom: 0.53vw solid #E8ECF4
+						.company_logo
+							width: 9.87vw
+							height: 9.87vw
+							margin-right: 2.4vw
+						.experience_details
+							@include font(3.2vw, 4.27vw)
+							.name
+								@include font(3.73vw, 5.07vw)
+								margin-bottom: 0.27vw
+						.experience_period
+							@include font(3.2vw, 4.27vw)							
+					.talent_item
+						width: 87.47vw
+						margin-bottom: 4.27vw
+						padding: 4.53vw 4.8vw
+						border-radius: 1.87vw
+						.head
+							margin-bottom: 0.53vw
+							p.title
+								@include font(4.27vw, 5.87vw)
+							.pic_blc
+								display: none
+						.play_button
+							width: 16vw
+							height: 16vw
+							border: 1.07vw solid $color_white
+							border-radius: 50%
+							box-sizing: border-box
+							margin-bottom: 0.8vw
+							img
+								width: 6.4vw
+								height: 5.33vw
+								margin-left: 1.6vw
+						.duration_time
+							@include font(4vw, 5.33vw)
+						
+					.slider_item
+						width: 100%
+						margin-bottom: 0
+						img
+							margin-bottom: 4vw
+							border-radius: 1.33vw
+						
+					.featured__item
+						display: block
+						@include padding-inline(3.47vw)
+						padding-bottom: 2.93vw
+						&:not(:first-child)
+							padding-top: 3.2vw
+						.pic_blc
+							width: 26.4vw
+							max-width: 26.4vw
+							height: 26.4vw
+							float: left
+							margin-right: 3.73vw
+							border-radius: 1.33vw
+							overflow: hidden
+							img
+								height: 100%
+								object-fit: cover
+						.featured_description
+							.title
+								height: 26.4vw
+								display: flex
+								align-items: flex-end
+								@include font(4.27vw, 5.87vw)
+								margin-bottom: 1.6vw
+								br
+									display: none
+							.link, .text
+								@include font(3.73vw, 5.07vw)
+								margin-bottom: 1.33vw
+							
+					.skill_item
+						@include font(3.73vw, 5.07vw)
+						padding: 2.13vw 3.73vw
+						border-radius: 1.33vw
+						margin-right: 3.47vw
+						margin-bottom: 3.47vw
+
+					.curated_contacts__item, .interests__item
+						width: 100%
+						@include padding-inline(3.47vw)
+						padding-bottom: 3.2vw
+						&:not(:first-child)
+							padding-top: 3.2vw
+						&:not(:last-child)
+							border-bottom: 0.53vw solid #E8ECF4
+						a
+							.profile_photo
+								width: 9.87vw
+								height: 9.87vw
+								margin-right: 2.4vw
+							.profile_info
+								.name
+									@include font(3.73vw, 5.07vw, 600)
+									margin-bottom: 0.27vw
+								.contacts
+									@include font(3.2vw, 4.27vw)
+					&.about
+						.body
+							@include padding-inline(3.47vw, 4vw)
+					&.talent
+						.body
+							@include padding-inline(4vw, 3.47vw)
+					&.photos
+						.body
+							@include padding-inline(4vw, 3.73vw)
+							padding-bottom: 2.67vw
+							.owl-dots
+								.owl-dot
+									span
+										width: 5.33vw
+										height: 1.87vw
+										border-radius: 1.47vw
+									&.active
+										span
+											width: 15.47vw
+					&.featured
+						.body
+							padding-bottom: 0
+					&.skills
+						.body
+							@include padding-inline(3.47vw)
+					&.curated_contacts, &.interests
+						.body
+							display: block
+					&.education
+						.head
+							a.add
+								margin-right: 0
+							.pic_blc
+								display: none
+	/*PROFILE PAGE END*/
+	
+	/*SAVED ITEMS PAGE START*/
+	.saved_items_page 
+		main 
+			.container
+				width: 94.93vw
+				flex-direction: column
+				padding: 0
+				.title
+					@include font(5.33vw, 7.2vw)
+					padding: 13.33vw 4.27vw
+					border-radius: 1.33vw
+					margin-bottom: 4.27vw
+					box-sizing: border-box
+				.left_side, .content
+					width: 100%	
+				.left_side 
+					.category
+						@include mobile_block
+						.category__add
+							padding: 3.73vw 3.47vw 3.2vw
+							border-bottom: 0.53vw solid #E8ECF4
+							p
+								@include font(3.73vw, 5.07vw)
+						ul
+							padding: 3.73vw 4vw 4.27vw
+							li
+								a
+									@include font(3.73vw, 5.33vw)
+									padding-left: 4.27vw
+									&:before
+										width: 2.67vw
+										height: 2.67vw
+								&:not(:last-child)
+									margin-bottom: 1.6vw
+				.content 
+					.saved_item
+						padding: 5.33vw 5.33vw 7.2vw
+						@include mobile_block
+						&:not(:last-child)
+							margin-bottom: 4.27vw
+						.pic_blc
+							width: 25.6vw
+							min-width: 25.6vw
+							height: 25.6vw
+							margin-bottom: 4vw
+						.post_description
+							display: flex
+							flex-wrap: wrap
+							.post_title
+								width: 51.73vw
+								align-self: flex-end
+								@include font(4.27vw, 5.33vw)
+								margin-bottom: 4vw
+							.short_description
+								@include font(3.73vw, 5.07vw)
+								margin-bottom: 2.93vw
+							a, p.saved_date
+								@include font(4.27vw, 5.87vw)
+							a
+								margin-bottom: 2.93vw
+							p.saved_date
+								width: 100%
+						.action 
+							span
+								width: 1.07vw
+								height: 1.07vw
+								&:not(:last-child)
+									margin-right: 0.53vw
+	/*SAVED ITEMS PAGE END*/
+
+	/*JOIN PREMIUM PAGE START*/
+	.join-premium 
+		main
+			padding-top: 0
+			padding-bottom: 18.4vw
+			.container
+				width: 94.93vw
+				section
+					&.top_blc
+						border-radius: 1.33vw
+						margin-bottom: 13.87vw
+						p
+							white-space: nowrap
+							@include font(5.87vw, 8vw)
+					&.get_premium
+						.why
+							@include font(3.73vw, 5.07vw)
+							margin-bottom: 2.4vw
+						.title
+							width: 68.8vw
+							@include margin-inline(auto)
+							@include font(6.4vw, 8vw)
+							margin-bottom: 13.87vw
+						.items
+							flex-direction: column
+							align-items: center
+							margin-bottom: 13.87vw
+							.item
+								width: 87.47vw
+								text-align: center
+								&:not(:last-child)
+									margin-bottom: 6.93vw
+								.item__title
+									@include font(5.33vw, 7.2vw)
+									margin-bottom: 2.93vw
+								.description
+									@include font(3.73vw, 4.8vw)
+						a.button
+							@include font(4vw, 11.2vw)
+							padding: 0 6.67vw
+							border-radius: 1.33vw
+	/*JOIN PREMIUM PAGE END*/
+
+	/*JOIN START PAGE START*/
+	.join-premium.start
+		.top_blc
+			width: 94.93vw
+			@include margin-inline(auto)
+			padding: 14.13vw 7.2vw
+			box-sizing: border-box
+			margin-bottom: 9.87vw
+			@include mobile_block
+			.title
+				@include font(5.87vw, 8vw)
+				margin-bottom: 6.4vw
+			.subtitle
+				@include font(4.53vw, 6.13vw)
+		.help_blc
+			width: 94.93vw
+			@include mobile_block
+			.head
+				padding: 7.2vw 9.33vw 6.67vw
+				border-bottom: 0.53vw solid #E8ECF4
+				.title
+					@include font(4.27vw, 5.87vw)
+					margin-bottom: 4.27vw
+				.recommend_text
+					@include font(3.73vw, 5.07vw)
+			ul
+				width: 100%
+				text-align: center
+				@include padding-block(6.67vw, 7.2vw)
+				li
+					@include font(3.73vw, 5.07vw)
+					&:before
+						display: block
+						width: 5.07vw
+						height: 5.07vw
+						border-radius: 1.6vw
+						@include margin-inline(auto)
+						margin-bottom: 2.4vw
+					&:not(:last-child)
+						margin-bottom: 5.33vw
+			.footer
+				border-top: 0.53vw solid #E8ECF4
+				@include padding-block(4vw, 5.33vw)
+				a.all_plans
+					@include font(4.8vw, 6.67vw)
+		.plan_items
+			flex-direction: column
+			.item
+				width: 100%
+				border-radius: 1.33vw
+				box-shadow: 0 0.53vw 2.4vw rgb(0 0 0 / 14%)
+				margin-bottom: 9.87vw
+				.head
+					border-radius: 1.33vw
+					padding: 2.67vw 10.13vw 4.8vw
+					p
+						@include font(4.27vw, 5.33vw)
+					.title
+						@include font(5.33vw, 11.2vw)
+						margin-bottom: 1.33vw
+				.body
+					padding: 12vw 3.47vw 11.73vw
+					p
+						@include font(3.73vw, 4.8vw)
+						&:not(:last-child)
+							margin-bottom: 6.93vw
+					.bold
+						@include font(5.33vw, 7.2vw)
+						margin-bottom: 2.93vw
+				.footer
+					@include padding-block(3.47vw, 2.93vw)
+					a.learn_more
+						@include font(5.33vw, 7.2vw)
+				&.selected
+					.recommended
+						font-size: 3.47vw
+						line-height: 5.33vw
+						padding: 0 1.33vw
+						border-radius: 1.33vw
+		.plan_description
+			.container
+				width: 94.93vw
+			.title
+				@include font(6.93vw, 8.27vw)
+				margin-bottom: 2.93vw
+				padding: 0 11.47vw
+			.subtitle
+				@include font(3.73vw, 5.07vw, normal)
+				margin-bottom: 6.93vw
+				padding: 0 11.47vw
+			.plan_description__items
+				flex-direction: column
+				align-items: center
+				.item
+					width: 100%
+					&:not(:last-child)
+						margin-bottom: 6.93vw
+					&:last-child
+						margin-bottom: 18.13vw
+					.title
+						@include font(5.33vw, 7.2vw)
+						margin-bottom: 1.6vw
+					.description
+						@include font(3.73vw, 4.8vw)
+						padding: 0 11.47vw
+			a.button.start_free
+				@include font(4vw, 11.2vw)
+				@include padding-inline(6.67vw, 6.93vw)
+				margin-bottom: 2.13vw
+				border-radius: 1.33vw
+			.pay_after
+				width: 50.13vw
+				@include margin-inline (auto)
+				@include font(3.73vw, 4.8vw)
+				margin-bottom: 18.13vw
+			.new_customers
+				flex-direction: column-reverse
+				align-items: center
+				margin-bottom: 19.73vw
+				.new_customers_pic
+					width: 84vw
+					height: 59.47vw
+					border-radius: 1.33vw
+					margin-bottom: 8.27vw
+				.new_customers_text
+					width: 82.93vw
+					text-align: center
+					padding-top: 0
+					.title
+						@include font(6.13vw, 7.47vw)
+						padding: 0
+						margin-bottom: 2.4vw
+					.subtitle
+						@include font(3.73vw, 5.33vw)
+						padding: 0
+						margin-bottom: 0
+			.how_helps
+				@include padding-block(24vw)
+				.container
+					flex-direction: column
+					.left_side, .right_side
+						width: 100%
+						text-align: center
+					.left_side
+						margin-bottom: 23.73vw
+						p
+							@include padding-inline(2.4vw)
+							@include font(6.13vw, 7.47vw)
+					.right_side
+						.tabs_nav
+							justify-content: center
+							margin-bottom: 5.33vw
+							.arrow
+								width: 13.07vw
+								height: 13.07vw
+								background-size: 4.8vw 3.47vw
+								background-position-y: 5.33vw
+								&:not(:last-child)
+									margin-right: 3.47vw
+						.tabs_blc#tabs
+							ul
+								margin-bottom: 3.47vw
+								li 
+									display: none
+									&.ui-tabs-active
+										display: block
+										width: 100%
+									a
+										@include font(5.6vw, 7.73vw)
+							.tabs_item
+								width: 74.4vw
+								margin-inline: auto
+								p
+									@include font(3.73vw, 5.33vw)
+			.with_slider
+				padding-bottom: 26.93vw
+				.slider_title
+					max-width: 78.67vw
+			.start_free_blc
+				@include padding-block(24.53vw)
+				.title
+					@include font(6.4vw, 4.8vw)
+					margin-bottom: 4.27vw
+				.pay_after
+					@include font(3.73vw, 4.8vw)
+					margin-bottom: 12.53vw
+				a.button
+					@include font(4vw, 11.2vw)
+					padding: 0 12vw
+					border-radius: 1.33vw
+		.payment
+			.top_blc
+				margin-bottom: 12.53vw
+				&.career
+					background-color: #00CA90
+				&.business
+					background-color: #1E92FE
+			.billing_cycle, .payments
+				.container
+					.head_blc
+						flex-direction: column
+						align-items: center
+						text-align: center
+						margin-bottom: 8.8vw
+						p.stage
+							width: 12.27vw
+							height: 12.27vw
+							@include font(5.33vw, 7.2vw)
+							margin-top: 0
+							margin-bottom: 2.67vw
+							margin-right: 0
+						p.stage_title
+							@include font(4.8vw, 6.67vw)
+							span
+								@include font(4.8vw, 6.93vw)
+					.billing_types
+						flex-direction: column
+						margin-bottom: 15.73vw
+						.item
+							width: 100%
+							padding: 11.47vw 0
+							@include mobile_block
+							border-bottom: 3.2vw solid transparent
+							@include transition
+							&:not(:last-child)
+								margin-bottom: 8vw
+							&:last-child
+								margin-bottom: 0
+							&.selected
+								border-bottom: 3.2vw solid #1E92FE
+							p
+								@include font(4.27vw, 7.47vw)
+							.billing_types_title
+								@include font(5.33vw, 9.07vw)
+								margin-bottom: 2.67vw
+							.sale
+								@include font(3.47vw, 8vw)
+								border-radius: 1.33vw
+								padding: 0 1.33vw
+								top: 2.67vw
+								right: 2.67vw
+					.total_price
+						@include mobile_block
+						margin-bottom: 22.67vw
+						.row
+							flex-direction: column
+							padding: 6.93vw 0 6.4vw
+							p
+								width: 45.33vw
+								text-align: center
+								@include font(4.53vw, 6.13vw)
+								&:first-child
+									margin-bottom: 2.67vw
+						.footer
+							padding: 6.13vw 11.2vw
+							text-align: center
+							border-bottom-left-radius: 1.33vw
+							border-bottom-right-radius: 1.33vw
+							p
+								@include font(3.73vw, 5.07vw)
+			.questions 
+				.container
+					width: 94.93vw
+	/*JOIN START PAGE END*/
+	
+	/*WRITING SESSIONS PAGE START*/
+	.writing_sessions
+		.top_blc
+			width: 94.93vw
+			@include margin-inline(auto)
+			padding: 57px 31px 68px
+			box-sizing: border-box
+			margin-bottom: 16px
+			@include mobile_block
+			.title
+				@include font(20px, 27px)
+				margin-bottom: 4px
+			.subtitle
+				@include font(16px, 22px)
+		main 
+			.container
+				width: 356px
+				flex-direction: column
+				.title, .left_side, .content
+					width: 100%
+				.title
+					order: 2
+					@include font(18px, 42px)
+					padding-left: 14px
+					margin-bottom: 3px
+				.left_side
+					order: 1
+					margin-bottom: 35px
+					.button
+						@include font(16px, 22px)
+						text-align: center
+						padding: 11px 0
+						border-radius: 5px
+						&.active
+							padding: 9px 0
+						&:not(:last-child)
+							margin-bottom: 16px
+				.content					
+					order: 3
+					@include mobile_block
+					padding: 30px 30px 0
+					margin-bottom: 90px
+					.song_items
+						flex-direction: column
+						.item
+							width: 100%
+							padding: 10px 11px 21px 19px
+							border-radius: 5px
+							margin-bottom: 30px
+							.head
+								margin-bottom: 9px
+								.song_title
+									@include font(18px, 25px)
+									padding-top: 10px
+								.sample
+									@include font(12px, 16px)
+									padding-top: 0
+							.song_text
+								@include font(14px, 20px)
+	/*WRITING SESSIONS PAGE END*/

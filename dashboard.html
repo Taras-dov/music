@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" dashboard-content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>MusicLinkUp - Dashboard</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <link href="css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="css/owl.theme.default.min.css" rel="stylesheet" />
+    <script src="js/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="css/sourse.css">
+</head>
+<body class="dashboard" >
+    <div class="container-limit">
+        <div class="dashboard-header">
+            <a class="dashboard-header__logo" href="#">
+                <img src="img/dashboard-logo.png" alt="logo">
+            </a>
+            <div class="dashboard-header__content">
+                <div class="dashboard-header__content-input">
+                    <input placeholder="Search" type="text">
+                    <img class="dashboard-header__content-img" src="img/icons/search_dark.svg" alt="">
+                </div>
+                <a href="#" class="dashboard-header__content-photo"><img src="img/dashboard-photo.jpg" alt="photo"></a>
+            </div>
+        </div>
+
+        <div class="dashboard-content">
+            <!-- Template for all pages -->
+            <div class="dashboard-content__home">
+                <ul class="dashboard-content__list">
+                    <li class="dashboard-content__item dashboard-content__item-active">
+                        <a href="dashboard_1.html">
+                            <img src="img/icons/dashboard/home.svg" alt="" class="dashboard-content__item-icon">
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="dashboard-content__item">
+                        <img src="img/icons/dashboard/home1.png" alt="" class="dashboard-content__item-icon">
+                        <span>Teams</span>
+                        <img src="img/icons/dashboard/arrow-right.png" alt="" class="dashboard-content__item-arrow">
+                    </li>
+                    <ul class="dashboard-content__item-drop">
+                        <li class="dashboard-content__item-droplist">
+                            <a href="html/dashboard_1.html">PR & Marketing Team</a>
+                        </li>
+                        <li class="dashboard-content__item-droplist">
+                            <a href="#">Management</a>
+                        </li>
+                        <li class="dashboard-content__item-droplist">
+                            <a href="#">HR Main Recruiters</a>
+                        </li>
+                        <li class="dashboard-content__item-droplist">
+                            <a href="#">Web Developers</a>
+                        </li>
+                        <li class="dashboard-content__item-droplist">
+                            <a href="#">Designers</a>
+                        </li>
+                        <li class="dashboard-content__item-droplist">
+                            <a href="#">Create a new team</a>
+                            <span>+</span>
+                        </li>
+                    </ul>
+                    <li class="dashboard-content__item dashboard-content__item-project">
+                        <img src="img/icons/dashboard/home2.png" alt="" class="dashboard-content__item-icon">
+                        <span>Projects</span>
+                        <img src="img/icons/dashboard/arrow-right.png" alt="" class="dashboard-content__item-arrow">
+                    </li>
+                    <ul class="dashboard-content__item-drop">
+                        <li class="dashboard-content__item-droplist">
+                            <a href="#">PR & Marketing Team</a>
+                        </li>
+                        <li class="dashboard-content__item-droplist">
+                            <a href="#">Management</a>
+                        </li>
+                        <li class="dashboard-content__item-droplist">
+                            <a href="#">HR Main Recruiters</a>
+                        </li>
+                        <li class="dashboard-content__item-droplist">
+                            <a href="#">Web Developers</a>
+                        </li>
+                        <li class="dashboard-content__item-droplist">
+                            <a href="#">Designers</a>
+                        </li>
+                        <li class="dashboard-content__item-droplist">
+                            <a href="#">Create a new team</a>
+                            <span>+</span>
+                        </li>
+                    </ul>
+                    <li class="dashboard-content__item">
+                        <a href="#">
+                            <img src="img/icons/dashboard/home2.png" alt="" class="dashboard-content__item-icon">
+                            <span>Reports</span>
+                        </a>
+                    </li>
+                </ul>
+                <button class="dashboard-content__btn dashboard-content__btn-bottom">
+                    <span>Go to Home Screen</span>
+                </button>
+            </div>
+            <!-- Content -->
+            <div class="dashboard-content__sliders">
+                <div class="dashboard-content__slider">
+                    <a class="dashboard-content__slider-item">
+                        <div class="dashboard-content__slider-title">Active Projects</div>
+                        <div class="dashboard-content__slider-number">4</div>
+                    </a>
+                    <a class="dashboard-content__slider-item">
+                        <div class="dashboard-content__slider-title">Teams</div>
+                        <div class="dashboard-content__slider-number">5</div>
+                    </a>
+                </div>
+                <div class="dashboard-content__slider dashboard-content__slider-owl">
+                    <div class="dashboard-content__slider-header">Team</div>
+                    <div class="dashboard-content__slider-carousel owl-carousel owl-theme">
+                        <div class="dashboard-content__slider-icon">
+                            <div class="dashboard-content__slider-descr">PR & Marketing Team</div>
+                            <a class="dashboard-content__slider-footer">8 team members</a>
+                        </div>
+                        <div class="dashboard-content__slider-icon">
+                            <div class="dashboard-content__slider-descr">Management</div>
+                            <a class="dashboard-content__slider-footer">3 team members</a>
+                        </div>
+                        <div class="dashboard-content__slider-icon">
+                            <div class="dashboard-content__slider-descr">HR <br> Main Recr</div>
+                            <a class="dashboard-content__slider-footer">10 team me</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard-content__slider dashboard-content__slider-owl">
+                    <div class="dashboard-content__slider-header">Projects</div>
+                    <div class="dashboard-content__slider-carousel owl-carousel owl-theme">
+                        <div class="dashboard-content__slider-icon dashboard-content__slider-icon-short">
+                            <div class="dashboard-content__slider-descr">Album <br> Launch</div>
+                            <div class="dashboard-content__slider-btn drop_open">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="dropdown_content">
+                                <a class="abuse_btn" href="/">Report abuse</a>
+                            </div>
+                        </div>
+                        <div class="dashboard-content__slider-icon dashboard-content__slider-icon-short">
+                            <div class="dashboard-content__slider-descr">Launching <br> a new single</div>
+                            <div class="dashboard-content__slider-btn drop_open">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="dropdown_content">
+                                <a class="abuse_btn" href="/">Report abuse</a>
+                            </div>
+                        </div>
+                        <div class="dashboard-content__slider-icon dashboard-content__slider-icon-short">
+                            <div class="dashboard-content__slider-descr">MusicLink</div>
+                            <div class="dashboard-content__slider-btn drop_open">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="dropdown_content">
+                                <a class="abuse_btn" href="/">Report abuse</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard-content__slider dashboard-content__slider-owl">
+                    <div class="dashboard-content__slider-header">Reports</div>
+                    <div class="dashboard-content__slider-carousel owl-carousel owl-theme">
+                        <div class="dashboard-content__slider-icon">
+                            <div class="dashboard-content__slider-descr">What’s <br> Overdue?</div>
+                            <a class="dashboard-content__slider-footer">RUN REPORT</a>
+                        </div>
+                        <div class="dashboard-content__slider-icon">
+                            <div class="dashboard-content__slider-descr">What’s coming up or due soon?</div>
+                            <a class="dashboard-content__slider-footer">RUN REPORT</a>
+                        </div>
+                        <div class="dashboard-content__slider-icon">
+                            <div class="dashboard-content__slider-descr">What has up to?</div>
+                            <a class="dashboard-content__slider-footer">RUN REPO</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

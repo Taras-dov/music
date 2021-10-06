@@ -1,0 +1,115 @@
+@use "sass:meta"
+$color_white: #ffffff
+$color_blue: #1E92FE
+$color_lightBlue: #61B2FE
+$color_darkBlue: #00193F
+$color_grey: #979797
+$color_body: #F2F4F8
+$color_border: #202631
+$color_borderLight: #E8ECF4
+$color_red: #FF6C6C
+$color_category: #B6BDCE
+$color_newPost: #E8F2FF
+$color_black: #000000
+$color_bluBlack: #121520
+$color_timeline: #8F9BB3
+$color_gray: #D8D8D8
+$color_placeholder: #AAB2C6
+$color_greyDark: #6A6A75
+$color_linkUp: #526997
+$teamBuilderBoxHover: #CDE4FA
+$colot_textDark: #2C2E30
+
+
+
+@mixin transition
+	transition: all 0.3s linear
+
+@mixin font($size, $height, $weight:null)
+	@if($weight == 'null')
+		font-size: $size
+		line-height: $height
+	@else
+		font-size: $size
+		font-weight: $weight
+		line-height: $height
+
+@mixin padding-block($x, $y:null)
+	@if($y==null)
+		padding-top: $x
+		padding-bottom: $x
+	@else
+		padding-top: $x
+		padding-bottom: $y
+@mixin padding-inline($x, $y:null)
+	@if($y==null)
+		padding-left: $x
+		padding-right: $x
+	@else
+		padding-left: $x
+		padding-right: $y
+
+@mixin margin-block($x, $y:null)
+	@if($y==null)
+		margin-top: $x
+		margin-bottom: $x
+	@else
+		margin-top: $x
+		margin-bottom: $y
+@mixin margin-inline($x, $y:null)
+	@if($y==null)
+		margin-left: $x
+		margin-right: $x
+	@else
+		margin-left: $x
+		margin-right: $y
+
+@mixin absolute($top:top, $x:50%, $left:left, $y:50%, $transform: true)
+	position: absolute
+	#{$top}: $x
+	#{$left}: $y
+	@if($transform)
+		transform: translate(-50%, -50%)
+@mixin syntax-colors($args...)
+	@debug meta.keywords($args)
+	// (class name, color)
+
+	@each $name, $color in meta.keywords($args)
+		&.#{$name}:before
+			background-color: $color
+@mixin round-pic($x, $overflow:true, $img:true)
+	width: $x
+	height: $x
+	border-radius: 50%
+	@if($overflow)
+		overflow: hidden
+	@if($img)
+		img
+			width: 100%
+@mixin mobile_block
+	border-radius: 1.33vw
+	box-shadow: 0 0.53vw 2.4vw rgba(0, 0, 0, 0.14221)
+	margin-bottom: 5.6vw
+%block
+	background-color: $color_white
+	border-radius: 0.26vw  /* 5/19.2 */
+	box-shadow: 0 0.104vw 0.46875vw rgba(0, 0, 0, 0.14)
+%arrow
+	background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='10' viewBox='0 0 18 10'%3E%3Cg id='Default_Copy_2' data-name='Default Copy 2' transform='translate(0 10) rotate(-90)'%3E%3Cpath id='Shape' d='M8.193,17.708.724,10.65a2.242,2.242,0,0,1,0-3.3l1.5,1.414a.321.321,0,0,0,0,.472l7.47,7.057a.962.962,0,0,1,0,1.415,1.105,1.105,0,0,1-1.5,0ZM.724,7.35,8.193.293l1.5,1.415L2.22,8.764ZM8.193.293a1.105,1.105,0,0,1,1.5,0,.962.962,0,0,1,0,1.415Z' transform='translate(0)'/%3E%3C/g%3E%3C/svg%3E%0A") no-repeat center center
+		size: cover
+	width: 0.677vw  /* 13/19.2 */
+	height: 0.365vw  /* 7/19.2 */
+@mixin button_play_music
+	width: 40px
+	height: 40px
+	border-radius: 50%
+	transform: rotate(-90deg)
+	cursor: pointer
+	&:hover
+		transform: rotate(-90deg) scale(1.1)
+		transition: 0.4s
+
+@import "fonts"
+@import "reset"
+@import "style"
+@import "media"

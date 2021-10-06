@@ -1,0 +1,1092 @@
+/*main page start*/
+body
+	background-color: $color_body
+	&.openPopUp
+		overflow: hidden
+.background-color
+	background-color: #121520
+.button
+	display: inline-block
+	font-size: 0.9375vw  /* 18/19.2 */
+	font-weight: bold
+	line-height: 1.25vw  /* 24/19.2 */
+	padding: 0.677vw  /* 13/19.2 */ 1.40625vw  /* 27/19.2 */ 0.521vw  /* 10/19.2 */
+	background-color: $color_blue
+	border-radius: 0.26vw  /* 5/19.2 */
+	color: $color_white
+	white-space: nowrap
+	@include transition
+	&:hover
+		cursor: pointer
+		background-color: $color_lightBlue
+.button.blk
+	border: 0.052vw solid $color_darkBlue
+	background-color: $color_white
+	color: $color_darkBlue
+	&:hover
+		background-color: $color_darkBlue
+		color: $color_white
+.button.blue
+	border: 0.052vw solid $color_blue
+	background-color: transparent
+	color: $color_blue
+	&:hover
+		background-color: $color_blue
+		color: $color_white
+.free_premium
+	width: 100%
+	box-sizing: border-box
+	text-align: center
+	margin-bottom: 1.198vw  /* 23/19.2 */
+.facebook, .google
+	display: inline-block
+	width: 7.292vw  /* 140/19.2 */
+	font-size: 1.146vw  /* 22/19.2 */
+	font-weight: bold
+	text-align: center
+	color: $color_blue
+	line-height: 1.5625vw  /* 30/19.2 */
+	padding: 0.625vw  /* 12/19.2 */ 1.042vw  /* 20/19.2 */ 0.573vw  /* 11/19.2 */ 1.09375vw  /* 21/19.2 */
+	box-sizing: border-box
+	border: 0.052vw solid $color_blue
+	border-radius: 0.26vw  /* 5/19.2 */
+	margin-right: 1.354vw  /* 26/19.2 */
+	@include transition
+	&:hover
+		background-color: $color_blue
+		color: $color_white
+header
+	.container
+		display: flex
+		align-items: center
+		justify-content: space-between
+		padding: 1.615vw  /* 31/19.2 */ 2.865vw  /* 55/19.2 */ 1.458vw  /* 28/19.2 */ 1.09375vw  /* 21/19.2 */
+		box-sizing: border-box
+	.header__logo
+		width: 14.01vw  /* 269/19.2 */
+		margin-left: 1.667vw  /* 32/19.2 */
+		img
+			width: 100%
+header.pages
+	padding: 1.042vw  /* 20/19.2 */ 2.76vw  /* 53/19.2 */
+	background-color: $color_white
+	box-shadow: 0 0.104vw 0.46875vw rgba(0, 0, 0, 0.14)
+	border-radius: 0 0 0.26vw  /* 5/19.2 */ 0.26vw  /* 5/19.2 */
+	.container
+		padding: 0
+	.header__logo
+		width: 2.96875vw  /* 57/19.2 */
+		height: 2.96875vw  /* 57/19.2 */
+		@include margin-inline(0, 1.198vw)
+		img
+			width: 100%
+	.left_side
+		display: flex
+		align-items: center
+		label
+			display: flex
+			position: relative
+			.pic_blc
+				display: flex
+				align-items: center
+				justify-content: center
+				@include absolute(top, 50%, right, 0.26vw)
+				width: 1.042vw  /* 20/19.2 */
+				height: 1.042vw  /* 20/19.2 */
+				img
+					width: 100%
+		input[type="search"]
+			width: 10.833vw  /* 208/19.2 */
+			@include font(0.729vw, 0.99vw)
+			font-family: "Nunito Sans", sans-serif
+			border: 0.052vw solid #202631
+			border-radius: 1.302vw  /* 25/19.2 */
+			padding: 0.729vw  /* 14/19.2 */ 0.729vw  /* 14/19.2 */ 0.677vw  /* 13/19.2 */ 0.9375vw  /* 18/19.2 */
+			&::placeholder
+				color: $color_border
+	nav
+		.work_sub
+			display: none
+		&>ul
+			display: flex
+			&>li
+				position: relative
+				display: flex
+				align-items: center
+				margin-right: 3.854vw  /* 74/19.2 */
+				a
+					@include font(0.833vw, 1.146vw)
+					color: $color_darkBlue
+					&:before
+						content: ""
+						@include absolute(top, 50%, left, -1.146vw)
+						background:
+							size: contain
+							repeat: no-repeat
+							position: center center
+						width: 1.354vw  /* 26/19.2 */
+						height: 1.354vw  /* 26/19.2 */					
+				&.current, &:hover
+					&>a
+						font-weight: bold
+						color: $color_blue
+				&.home a:before
+					background-image: url("/img/icons/home.svg")
+				&.network a:before
+					background-image: url("/img/icons/network.svg")
+				&.work a:before
+					background-image: url("/img/icons/work.svg")
+				&.work
+					.work_sub
+						@include absolute(top, 2.083vw, right, -1.146vw, false)
+						width: 10.677vw  /* 205/19.2 */
+						border: 0.104vw solid $color_borderLight
+							radius: 0.26vw  /* 5/19.2 */
+						background-color: $color_white
+						box-shadow: 0 -0.052vw 0.46875vw rgba(0, 0, 0, 0.14)
+						li
+							width: 100%
+							border-bottom: 0.104vw solid $color_borderLight
+							@include padding-block(0.78125vw)
+							padding-left: 2.604vw  /* 50/19.2 */
+							box-sizing: border-box
+							&.btn
+								display: none
+								
+							&:last-child
+								border: none
+							&:hover
+								a
+									font-weight: bold
+									color: $color_blue
+							a
+								position: relative
+								display: flex
+								align-items: center
+								&:before
+									content: ""
+									@include absolute(top, 50%, left, -1.146vw)
+									background: url("/img/icons/work_items.svg") no-repeat center center
+										size: contain
+									width: 1.146vw  /* 22/19.2 */
+									height: 1.146vw  /* 22/19.2 */
+					&:after
+						content: ""
+						@include absolute(bottom, 0.15625vw, right, -1.302vw)
+						background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='10' viewBox='0 0 18 10'%3E%3Cg id='Default_Copy_2' data-name='Default Copy 2' transform='translate(0 10) rotate(-90)'%3E%3Cpath id='Shape' d='M8.193,17.708.724,10.65a2.242,2.242,0,0,1,0-3.3l1.5,1.414a.321.321,0,0,0,0,.472l7.47,7.057a.962.962,0,0,1,0,1.415,1.105,1.105,0,0,1-1.5,0ZM.724,7.35,8.193.293l1.5,1.415L2.22,8.764ZM8.193.293a1.105,1.105,0,0,1,1.5,0,.962.962,0,0,1,0,1.415Z' transform='translate(0)'/%3E%3C/g%3E%3C/svg%3E%0A") no-repeat center center
+							size: cover
+						width: 0.677vw  /* 13/19.2 */
+						height: 0.365vw  /* 7/19.2 */
+				&.marketplace a:before
+					background-image: url("/img/icons/marketplace.svg")
+				&.team_builder a:before
+					background-image: url("/img/icons/team_builder.svg")
+	.profile_info
+		position: relative
+		display: flex
+		align-items: center
+		&>a
+			position: relative
+			display: flex
+			align-items: center
+			justify-content: center
+			margin-right: 1.51vw  /* 29/19.2 */
+			width: 1.302vw  /* 25/19.2 */
+			height: 1.40625vw  /* 27/19.2 */
+			&.new
+				img
+					width: 100%
+				&:after
+					display: block
+			&:after
+				display: none
+				content: ""
+				@include absolute(top, 0, right, 0)
+				transform: none
+				@include round-pic(0.573vw, false, false)
+				background-color: $color_red
+			&.message
+				width: 1.458vw  /* 28/19.2 */
+				height: 1.40625vw  /* 27/19.2 */
+				img
+					width: 100%
+				&:after
+					right: -0.26vw  /* -5/19.2 */
+		.profile_photo
+			@include round-pic(2.65625vw)
+			margin-right: 0.46875vw  /* 9/19.2 */
+		.profile_name
+			position: relative
+			@include font(0.833vw, 1.146vw, bold)
+			padding-right: 1.146vw  /* 22/19.2 */
+			&:after
+				content: ""
+				@include absolute(bottom, 0.15625vw, right, -0.3125vw)
+				@extend %arrow
+			&:hover
+				cursor: pointer
+		.profile_info__list
+			display: none
+			@include absolute(top, 3.125vw, right, 0, false)
+			width: 13.90625vw  /* 267/19.2 */
+			background-color: $color_white
+			box-shadow: 0 -0.052vw 0.46875vw rgba(0, 0, 0, 0.14)
+			box-sizing: border-box
+			z-index: 1
+			a
+				@include font(0.9375vw, 1.458vw)
+				color: $color_darkBlue
+			.title
+				@include font(0.833vw, 1.146vw)
+				text-transform: uppercase
+				color: $color_blue
+			.profile_name
+				@include font(1.042vw, 1.40625vw)
+				&:after
+					display: none
+			&>li
+				padding: 1.09375vw  /* 21/19.2 */ 1.146vw  /* 22/19.2 */ 0.833vw  /* 16/19.2 */
+				&:not(:last-child)
+					border-bottom: 0.104vw solid #E8ECF4
+header.marketplace
+	background-color: $color_white
+	.container
+		max-width: 100%
+		width: 100%
+		padding: 0.99vw 3.958vw 1.042vw 5.33vw
+		a, p
+			@include font(0.833vw, 1.146vw)
+			color: $color_white
+		.header__logo
+			width: 11.979vw
+			height: 2.96875vw
+			margin-left: 0
+			margin-right: 4.84375vw
+			line-height: 1
+			display: flex
+			align-items: center
+			.pic_blc
+				width: 2.96875vw
+				height: 2.96875vw
+				margin-right: 0.46875vw
+			p
+				@include font(1.146vw, 1.5625vw, 800)
+				text-transform: uppercase
+		nav
+			margin-right: auto
+			ul
+				display: flex
+				align-items: center
+				li
+					display: flex
+					align-items: center
+				li:not(:last-child)
+					margin-right: 2.604vw
+		.profile_info
+			display: flex
+			align-items: center
+			position: relative
+			.message
+				position: relative
+				line-height: 1
+				width: 1.458vw
+				height: 1.40625vw
+				img
+					width: 100%
+				&.new:after
+					display: block
+				&:after
+					display: none
+					content: ""
+					position: absolute
+					top: 0
+					right: -0.26vw
+					transform: none
+					width: 0.573vw
+					height: 0.573vw
+					border-radius: 50%
+					background-color: #FF6C6C
+			p
+				margin-left: 1.875vw
+				cursor: pointer	
+				position: relative
+				padding-right: 1.042vw
+				&::after
+					content: ' '
+					display: block
+					position: absolute
+					right: 0
+					top: 0.15625vw
+					width: 0.78125vw
+					height: 0.78125vw
+					background-image: url('../img/icons/shape.svg')
+					background-repeat: no-repeat
+					background-position: center
+			.profile_menu_list
+				display: none
+				width: 11.042vw
+				position: absolute
+				right: 0
+				top: 2.083vw
+				background-color: #fff
+				box-shadow: 0 -0.052vw 0.46875vw rgb(0 0 0 / 14%)
+				li
+					padding: 0.521vw 0.625vw
+					&:not(:last-child)
+						border-bottom: 0.104vw solid #e8ecf4
+					a
+						font-style: normal
+						font-weight: normal
+						font-size: 0.9375vw
+						color: inherit
+						&:hover
+							color: #2196f3
+							transition: 0.4s			
+.header__starts
+	display: flex
+	align-items: center
+	a
+		font-size: 0.9375vw  /* 18/19.2 */
+		font-weight: bold
+		line-height: 1.25vw  /* 24/19.2 */
+		color: $color_blue
+		margin-left: 1.5625vw  /* 30/19.2 */
+		&.started.button
+			color: $color_white
+	form
+		position: relative
+		margin-left: 1.40625vw  /* 27/19.2 */
+		label 
+			cursor: pointer
+			.pic_blc
+				display: flex
+				align-items: center
+				justify-content: center
+				width: 0.833vw  /* 16/19.2 */
+				height: 0.833vw  /* 16/19.2 */
+				position: absolute
+				top: 50%
+				right: 0.78125vw
+				-webkit-transform: translateY(-50%)
+				transform: translateY(-50%)
+				-webkit-transition: right 0.3s linear
+				transition: right 0.3s linear
+				img
+					width: 100%
+		input
+			border: none
+			outline: none
+			width: 0
+			color: $color_blue
+			padding-right: 0.78125vw  /* 15/19.2 */
+			background-color: transparent
+			-webkit-transition: width 0.3s linear
+			transition: width 0.3s linear
+			@include font(0.729vw, 0.99vw)
+			&::placeholder
+				color: $color_blue
+				@include font(0.729vw, 0.99vw)
+			&[type=search]:focus
+				width: 10.833vw  /* 208/19.2 */
+				border: 0.052vw solid $color_blue
+				border-radius: 1.302vw  /* 25/19.2 */
+				padding: 0.78125vw  /* 15/19.2 */ 1.042vw  /* 20/19.2 */
+				&~img
+					right: 0.78125vw  /* 15/19.2 */
+section
+	&.top_blc
+		.header__starts
+			display: none
+		.container
+			display: flex
+			justify-content: space-between
+			padding-top: 2.396vw  /* 46/19.2 */
+			padding-bottom: 5.365vw  /* 103/19.2 */
+			padding-left: 9.115vw  /* 175/19.2 */
+			box-sizing: border-box
+		.top_blc__text_blc
+			//width: 48%
+			width: 43.2vw
+		.top_blc__pic_blc
+			//width: 52%
+			width: 46.8vw
+		.top_blc__pic_blc img
+			width: 100%
+		.text_blc__title
+			max-width: 36.458vw  /* 700/19.2 */
+			font-size: 4.323vw  /* 83/19.2 */
+			font-weight: bold
+			line-height: 5vw  /* 96/19.2 */
+			color: $color_darkBlue
+			margin-top: 5.625vw  /* 108/19.2 */
+			margin-bottom: 2.96875vw  /* 57/19.2 */
+		.button
+			font-size: 1.146vw  /* 22/19.2 */
+			line-height: 1.5625vw  /* 30/19.2 */
+			padding: 0.99vw  /* 19/19.2 */ 1.615vw  /* 31/19.2 */ 0.78125vw  /* 15/19.2 */ 1.615vw  /* 31/19.2 */
+			margin-bottom: 2.604vw  /* 50/19.2 */
+		.connect_text
+			font-size: 1.146vw  /* 22/19.2 */
+			line-height: 1.5625vw  /* 30/19.2 */
+			color: $color_darkBlue
+			margin-bottom: 0.885vw  /* 17/19.2 */
+	&.professionals
+		text-align: center
+		padding-top: 5.521vw  /* 106/19.2 */
+		padding-bottom: 12.083vw  /* 232/19.2 */
+		.professionals__title
+			@include font(2.604vw , 3.125vw, bold)
+			@include margin-inline(auto)
+			max-width: 31.25vw  /* 600/19.2 */
+			margin-bottom: 4.0625vw  /* 78/19.2 */
+			padding-left: 1.979vw  /* 38/19.2 */
+		.pic_blc
+			width: 67.552vw  /* 1297/19.2 */
+			@include margin-inline(auto)
+			img
+				width: 100%
+		.professionals__more
+			@include font(1.042vw, 3.125vw)
+			margin-top: -1.927vw  /* -37/19.2 */
+			padding-left: 2.8125vw  /* 54/19.2 */
+	&.connect
+		background-color: $color_darkBlue
+		padding-top: 5.833vw  /* 112/19.2 */ 
+		padding-bottom: 7.135vw  /* 137/19.2 */
+		color: $color_white
+		text-align: center
+		.section_mark
+			font-size: 0.833vw  /* 16/19.2 */
+			line-height: 1.146vw  /* 22/19.2 */
+			text-transform: uppercase
+			margin-bottom: 0.521vw  /* 10/19.2 */
+		.connect__title
+			max-width: 33.021vw  /* 634/19.2 */
+			margin-left: auto
+			margin-right: auto
+			font-size: 1.771vw  /* 34/19.2 */
+			line-height: 2.396vw  /* 46/19.2 */
+			margin-bottom: 5.833vw  /* 112/19.2 */
+		.connect__items
+			max-width: 75vw  /* 1440/19.2 */
+			display: flex
+			justify-content: space-between
+			margin-left: auto
+			margin-right: auto
+			margin-bottom: 5vw  /* 96/19.2 */
+			text-align: left
+			.item
+				width: 15.729vw  /* 302/19.2 */
+				.pic_blc
+					border: 0.052vw solid $color_grey
+					border-radius: 0.26vw  /* 5/19.2 */
+					overflow: hidden
+					box-sizing: border-box
+					margin-bottom: 1.25vw  /* 24/19.2 */
+					img
+						display: block
+						width: 100%
+						height: auto
+				.name
+					font-size: 1.09375vw  /* 21/19.2 */
+					font-weight: bold
+					line-height: 1.458vw  /* 28/19.2 */
+					text-transform: uppercase
+					margin-bottom: 0.208vw  /* 4/19.2 */
+				.prof, .location
+					font-size: 0.833vw  /* 16/19.2 */
+					font-weight: bold
+					line-height: 1.146vw  /* 22/19.2 */
+				.prof
+					color: $color_blue
+					margin-bottom: 0.26vw  /* 5/19.2 */
+		.join.button
+			font-size: 1.146vw  /* 22/19.2 */
+			line-height: 1.5625vw  /* 30/19.2 */
+			padding: 0.99vw  /* 19/19.2 */ 1.667vw  /* 32/19.2 */ 0.78125vw  /* 15/19.2 */
+			color: $color_blue
+			background-color: $color_white
+			&:hover
+				background-color: $color_blue
+				color: $color_white
+	&.for_whom
+		padding-top: 10.365vw  /* 199/19.2 */
+		padding-bottom: 13.49vw  /* 259/19.2 */
+		.section_mark
+			font-size: 0.833vw  /* 16/19.2 */
+			line-height: 2.037vh  /* 22/10.8 */
+			color: $color_blue
+			text-align: center
+			text-transform: uppercase
+			margin-bottom: 0.521vw  /* 10/19.2 */
+		.connect__title
+			max-width: 48.021vw  /* 922/19.2 */
+			font-size: 1.771vw  /* 34/19.2 */
+			line-height: 2.396vw  /* 46/19.2 */
+			color: $color_darkBlue
+			margin-left: auto
+			margin-right: auto
+			text-align: center
+			margin-bottom: 5.104vw  /* 98/19.2 */
+		.for_whom__items
+			display: flex
+			justify-content: space-between
+			max-width: 57.8125vw  /* 1110/19.2 */
+			margin-left: auto
+			margin-right: auto
+			p
+				position: relative
+				font-size: 1.354vw  /* 26/19.2 */
+				font-weight: bold
+				line-height: 2.083vw  /* 40/19.2 */
+				&:before
+					content: ""
+					position: absolute
+					top: 0.417vw  /* 8/19.2 */
+					left: -2.1875vw  /* -42/19.2 */
+					width: 1.5625vw  /* 30/19.2 */
+					height: 1.09375vw  /* 21/19.2 */
+					background: url("/img/icons/check.svg") no-repeat center center
+					background-size: cover
+	&.join_free
+		background-color: #FAFAFA
+		padding: 2.96875vw  /* 57/19.2 */ 5.677vw  /* 109/19.2 */ 3.177vw  /* 61/19.2 */ 5.833vw  /* 112/19.2 */
+		.container
+			display: flex
+			justify-content: space-between
+			align-items: center
+		p
+			max-width: 48.385vw  /* 929/19.2 */
+			font-size: 1.771vw  /* 34/19.2 */
+			font-weight: bold
+			line-height: 2.708vw  /* 52/19.2 */
+
+		p
+			color: $color_darkBlue
+
+		.join.button
+			font-size: 1.146vw  /* 22/19.2 */
+			line-height: 1.5625vw  /* 30/19.2 */
+			padding: 0.99vw  /* 19/19.2 */ 1.667vw  /* 32/19.2 */ 0.78125vw  /* 15/19.2 */
+			margin-top: 0.26vw  /* 5/19.2 */
+			border-radius: 0.521vw  /* 10/19.2 */
+footer
+	padding: 2.083vw  /* 40/19.2 */ 8.4375vw  /* 162/19.2 */ 1.042vw  /* 20/19.2 */ 8.958vw  /* 172/19.2 */
+	background-color: $color_darkBlue
+	a, p
+		color: $color_white
+	.title
+		font-size: 1.354vw  /* 26/19.2 */
+		font-weight: bold
+		line-height: 1.25vw  /* 24/19.2 */
+		margin-bottom: 0.677vw  /* 13/19.2 */
+	.item.logo
+		width: 18vw
+		.footer_logo
+			width: 15.052vw
+			img
+				width: 100%
+	.item.theme
+		display: flex
+		align-items: center
+		margin-top: 0.208vw  /* 4/19.2 */
+		a
+			width: 2.135vw  /* 41/19.2 */
+			height: 2.135vw  /* 41/19.2 */
+			@include margin-inline(0.521vw)
+			border-radius: 0.26vw  /* 5/19.2 */
+			cursor: pointer
+	.row
+		display: flex
+		justify-content: space-between
+		&:first-child
+			margin-bottom: 2.1875vw  /* 42/19.2 */
+			padding-right: 1.458vw  /* 28/19.2 */
+			a
+				display: block
+				font-size: 1.042vw  /* 20/19.2 */
+				line-height: 1.667vw  /* 32/19.2 */
+		&:last-child 
+			.item:nth-child(2)
+				margin-right: auto
+				margin-left: 8.6vw
+				p
+					line-height: 1.51vw  /* 29/19.2 */
+			a, p
+				font-size: 0.9375vw  /* 18/19.2 */
+				line-height: 1.25vw  /* 24/19.2 */
+			.copy
+				margin-bottom: 0.46875vw  /* 9/19.2 */
+			a
+				border-right: 0.052vw solid $color_white
+				padding-right: 0.573vw  /* 11/19.2 */
+				margin-right: 0.573vw  /* 11/19.2 */
+				&:last-child
+					border: none
+			.item.theme a
+				padding-right: 0
+				border: none
+				img
+					width: 100%
+.sidebar_footer
+	@extend %block
+	margin-bottom: 1.198vw  /* 23/19.2 */
+	.header__logo
+		text-align: center
+		@include padding-block(0.677vw)
+		border-bottom: 0.104vw solid $color_borderLight
+		.pic_blc
+			max-width: 11.042vw  /* 212/19.2 */
+			@include margin-inline(auto)
+			img
+				width: 100%
+	ul
+		columns: 2
+		padding-left: 2.917vw  /* 56/19.2 */
+		@include padding-block(1.927vw, 1.979vw)
+		li
+			margin-bottom: 0.3125vw  /* 6/19.2 */
+			a
+				@include font(0.833vw, 1.146vw)
+				color: $color_border
+	p.copy
+		text-align: center
+		@include font(0.833vw, 1.146vw, 300)
+		padding-bottom: 0.677vw  /* 13/19.2 */
+/*main page end*/
+.banner
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.0574588) 31.28%, #000000 100%), url("/img/banner.jpg") no-repeat center center
+		size: cover
+	border-radius: 0.26vw  /* 5/19.2 */
+	color: $color_white
+	padding: 8.021vw  /* 154/19.2 */ 0.625vw  /* 12/19.2 */ 0.625vw  /* 12/19.2 */ 0.729vw  /* 14/19.2 */
+	margin-bottom: 1.198vw  /* 23/19.2 */
+	.title
+		@include font(1.51vw, 2.083vw, 900)
+		margin-bottom: 0.521vw  /* 10/19.2 */
+	.text
+		@include font(1.51vw, 1.71875vw, bold)
+		margin-bottom: 1.51vw  /* 29/19.2 */
+	.banner_footer
+		display: flex
+		align-items: flex-end
+		justify-content: space-between
+		.learn_more
+			@include font(0.833vw, 1.146vw, bold)
+			padding: 0.625vw  /* 12/19.2 */ 2.292vw  /* 44/19.2 */
+			border: 0.052vw solid $color_white
+			border-radius: 0.26vw  /* 5/19.2 */
+			color: $color_white
+		p
+			@include font(0.833vw, 1.146vw)
+.post_item
+	@extend %block
+	margin-bottom: 1.198vw  /* 23/19.2 */
+	.post_header
+		display: flex
+		align-items: center
+		justify-content: space-between
+		padding: 0.9375vw  /* 18/19.2 */ 1.667vw  /* 32/19.2 */ 0.885vw  /* 17/19.2 */
+		border-bottom: 0.104vw solid $color_borderLight
+		.profile_info
+			display: flex
+			align-items: center
+			.profile_photo
+				@include round-pic(2.865vw)
+				margin-right: 0.573vw  /* 11/19.2 */
+			.profile_text
+				p
+					@include font(0.729vw, 0.99vw)
+					color: $color_timeline
+					&.profile_name
+						@include font(0.833vw, 1.146vw, bold)
+						color: $color_border
+		.saved_post
+			display: flex
+			width: 1.042vw  /* 20/19.2 */
+			height: 1.146vw  /* 22/19.2 */
+			margin-left: auto
+			margin-right: 1.302vw  /* 25/19.2 */
+			justify-content: center
+			align-items: center
+			padding-top: 0.15625vw  /* 3/19.2 */
+			img
+				width: 100%
+		.header_action
+			position: relative
+			&:hover
+				cursor: pointer
+			span
+				display: inline-block
+				@include round-pic(0.3125vw, false, false)
+				background-color: $color_gray
+				@include margin-inline(0.104vw)
+			.action_dropdown
+				display: none
+				position: absolute
+				top: 1.5625vw  /* 30/19.2 */
+				right: 0
+				width: 13.021vw  /* 250/19.2 */
+				background: $color_white
+				box-shadow: 0 0.104vw 0.46875vw rgba(0, 0, 0, 0.14)
+				a
+					display: block
+					position: relative
+					@include font(0.9375vw, 1.302vw)
+					color: $color_darkBlue
+					padding: 0.365vw  /* 7/19.2 */ 0.625vw  /* 12/19.2 */ 0.3125vw  /* 6/19.2 */ 2.292vw  /* 44/19.2 */
+					&:before
+						content: ""
+						@include absolute(top, 50%, left, 1.25vw)
+						width: 1.25vw  /* 24/19.2 */
+						height: 1.25vw  /* 24/19.2 */
+						background:
+							repeat: no-repeat
+							position: center center
+							size: contain
+					&:first-child:before
+						background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' class='svg-icon' viewBox='0 0 20 20'%3E%3Cpath d='M17.35,2.219h-5.934c-0.115,0-0.225,0.045-0.307,0.128l-8.762,8.762c-0.171,0.168-0.171,0.443,0,0.611l5.933,5.934c0.167,0.171,0.443,0.169,0.612,0l8.762-8.763c0.083-0.083,0.128-0.192,0.128-0.307V2.651C17.781,2.414,17.587,2.219,17.35,2.219M16.916,8.405l-8.332,8.332l-5.321-5.321l8.333-8.332h5.32V8.405z M13.891,4.367c-0.957,0-1.729,0.772-1.729,1.729c0,0.957,0.771,1.729,1.729,1.729s1.729-0.772,1.729-1.729C15.619,5.14,14.848,4.367,13.891,4.367 M14.502,6.708c-0.326,0.326-0.896,0.326-1.223,0c-0.338-0.342-0.338-0.882,0-1.224c0.342-0.337,0.881-0.337,1.223,0C14.84,5.826,14.84,6.366,14.502,6.708'%3E%3C/path%3E%3C/svg%3E")
+					&:last-child:before
+						background-image: url("/img/icons/report_post.png")
+	.post_description
+		padding: 0.729vw  /* 14/19.2 */ 1.667vw  /* 32/19.2 */ 0.573vw  /* 11/19.2 */
+		p
+			@include font(0.833vw, 1.146vw)
+			color: $color_darkBlue
+	.post_pic
+		img
+			width: 100%
+	.post_footer
+		display: flex
+		&>div
+			flex-grow: 1
+			text-align: center
+			@include padding-block(0.833vw)
+			&:not(:last-child)
+				border-right: 0.104vw solid $color_borderLight
+			p
+				display: inline
+				position: relative
+				@include font(0.833vw, 1.146vw)
+				color: $color_timeline
+				&:before
+					content: ""
+					@include absolute(top, 50%, left, -1.198vw)
+					width: 1.302vw  /* 25/19.2 */
+					height: 1.146vw  /* 22/19.2 */
+					background:
+						repeat: no-repeat
+						position: center center
+						size: contain
+				&:hover
+					cursor: pointer
+			&.likes
+				p:before
+					background-image: url("/img/icons/like.svg")
+				&.liked
+					p:before
+						background-image: url("/img/icons/liked.svg")
+			&.message
+				p:before
+					background-image: url("/img/icons/comment.svg")
+			&.repost
+				p:before
+					background-image: url("/img/icons/repost.svg")
+	.post_comments
+		//display: none
+		padding: 1.458vw  /* 28/19.2 */ 1.667vw  /* 32/19.2 */ 0.833vw  /* 16/19.2 */ 0
+		border-top: 0.104vw solid #E8ECF4
+		.write_new
+			display: flex
+			align-items: center
+			margin-bottom: 1.198vw  /* 23/19.2 */
+			padding-left: 1.354vw  /* 26/19.2 */
+			.profile_photo
+				@include round-pic(1.927vw)
+				margin-right: 0.729vw  /* 14/19.2 */
+			label
+				width: 100%
+				input
+					width: 100%
+					@include font(0.833vw, 1.146vw)
+					background: #F2F4F8
+					border-radius: 0.365vw  /* 7/19.2 */
+					padding: 0.365vw  /* 7/19.2 */ 0.729vw  /* 14/19.2 */
+					box-sizing: border-box
+					&::placeholder
+						color: $color_placeholder
+		.view_all
+			@include font(0.833vw, 1.146vw, 600)
+			color: $color_darkBlue
+			margin-left: 1.354vw  /* 26/19.2 */
+.writed_comments
+	min-width: 60%
+	.item
+		display: flex
+		flex-wrap: wrap
+		padding-left: 2.65625vw  /* 51/19.2 */
+		box-sizing: border-box
+		.profile_photo
+			@include round-pic(1.927vw)
+			min-width: 1.927vw  /* 37/19.2 */
+			margin-right: 0.729vw  /* 14/19.2 */
+		.item_body
+			margin-bottom: 1.198vw  /* 23/19.2 */
+			width: calc(100% - 2.65625vw)
+			.item_body__text
+				position: relative
+				background: $color_body
+				border-radius: 0.365vw  /* 7/19.2 */
+				padding: 0.46875vw  /* 9/19.2 */ 0.729vw  /* 14/19.2 */ 0.417vw  /* 8/19.2 */
+				box-sizing: border-box
+				margin-bottom: 0.15625vw  /* 3/19.2 */
+				color: $color_darkBlue
+				@include font(0.833vw, 1.146vw)
+				.user_name
+					font-weight: bold
+				.item_text
+					display: -webkit-box
+					-webkit-line-clamp: 3
+					-webkit-box-orient: vertical
+					overflow: hidden
+					&.show
+						-webkit-line-clamp: initial
+				.view_more
+					@include absolute(bottom, -0.15625vw, right, -4.167vw)
+					padding-right: 5.208vw  /* 100/19.2 */
+					background-color: #F2F4F8
+					font-weight: 700
+					&:hover
+						cursor: pointer
+					&:before
+						content: "..."
+						width: 0.99vw  /* 19/19.2 */
+						top: 50%
+						left: -0.521vw  /* -10/19.2 */
+						@include absolute(top, 50%, left, -0.46875vw)
+						background-color: #F2F4F8
+			.item_interactive
+				position: relative
+				display: flex
+				justify-content: space-between
+				align-items: center
+				padding-left: 1.042vw  /* 20/19.2 */
+				box-sizing: border-box
+				a, p
+					margin-right: 0.99vw  /* 19/19.2 */
+					@include font(0.729vw, 0.99vw, 600)
+					color: $color_darkBlue
+				.likes.liked
+					color: $color_blue
+				.add_subcomment
+					margin-right: auto
+				.likes_qwt
+					position: relative
+					width: 4.167vw  /* 80/19.2 */
+					text-align: center
+					background: #FFFFFF
+					box-shadow: 0vw -0.104vw 0.46875vw rgba(0, 0, 0, 0.14221)
+					border-radius: 0.365vw  /* 7/19.2 */
+					padding: 0.15625vw  /* 3/19.2 */ 1.042vw  /* 20/19.2 */ 0.15625vw  /* 3/19.2 */ 2.24vw  /* 43/19.2 */
+					margin-top: -1vw  /* -25/19.2 */
+					margin-right: 0.78125vw  /* 15/19.2 */
+					box-sizing: border-box
+					color: $color_placeholder
+					user-select: none
+					&:before
+						content: ""
+						@include absolute(top, 50%, left, 1.146vw)
+						background: url(/img/icons/liked.svg) no-repeat center center
+							size: cover
+						width: 0.9375vw  /* 18/19.2 */
+						height: 0.833vw  /* 16/19.2 */
+		.view_answer
+			width: 100%
+			margin-top: -0.9375vw  /* -18/19.2 */
+			margin-left: 2.65625vw  /* 51/19.2 */
+			margin-bottom: 1.198vw  /* 23/19.2 */
+			a
+				position: relative
+				@include font(0.833vw, 1.146vw, 600)
+				color: $color_darkBlue
+				padding-left: 2.448vw  /* 47/19.2 */
+				&:before
+					content: ""
+					@include absolute(top, 50%, left, 1.615vw)
+					background: url("/img/icons/answer.svg") no-repeat center center
+						size: contain
+					width: 1.09375vw  /* 21/19.2 */
+					height: 0.625vw  /* 12/19.2 */
+.with_slider
+	padding-top: 5.417vw
+	padding-bottom: 8.698vw
+	margin: 0 auto
+	.wrap
+		display: flex
+		justify-content: center
+	.left
+		margin-right: 2.8125vw
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		text-align: left
+		padding-bottom: 1.042vw
+	.right
+		width: 23.229vw
+		img
+			width: 100%
+	.txt
+		color: #00193F
+		font-size: 1.458vw
+		line-height: 2.5vw
+		max-width: 21.927vw
+	.author
+		color: #00193F
+		font-size: 1.09375vw
+		line-height: 1.458vw
+		text-transform: uppercase
+	.position
+		color: #1E92FE
+		font-size: 0.833vw
+		line-height: 1.09375vw
+	.slider_title
+		color: #00193F
+		font-size: 1.771vw
+		line-height: 2.396vw
+		text-align: center
+		max-width: 31.25vw
+		margin: 0 auto 6.25vw
+	.container
+		text-align: center
+	.button
+		@include font(1.146vw, 1.5625vw)
+		padding: 0.885vw 3.385vw
+	.slider_items
+		margin-bottom: 10.052vw
+	.owl-theme
+		.owl-dots
+			width: 23.229vw
+			margin-right: 16.979vw
+			margin-left: auto
+			margin-top: 1.40625vw
+			.owl-dot
+				span
+					width: 4.01vw
+					height: 0.46875vw
+					background-color: $color_darkBlue
+					opacity: 0.3
+					border-radius: 0.286vw
+					@include margin-inline(0.417vw)
+				&.active, &:hover
+					span
+						background-color: $color_blue
+						opacity: 1
+
+.custom-checkbox
+	position: absolute
+	z-index: -1
+	opacity: 0
+	margin: 0
+	&:hover+label::before
+		background-color: #1E92FE
+.custom-checkbox+label
+	display: inline-flex
+	align-items: center
+	user-select: none
+.custom-checkbox+label::before
+	content: ''
+	display: inline-block
+	width: 1.09375vw  /* 21/19.2 */
+	height: 1.09375vw  /* 21/19.2 */
+	flex-shrink: 0
+	flex-grow: 0
+	border: 0.052vw solid #6A6A75
+	box-sizing: border-box
+	border-radius: 0.15625vw  /* 3/19.2 */
+	margin-right: 0.573vw  /* 11/19.2 */
+	background-size: 50% 50%
+	cursor: pointer
+.custom-checkbox:checked+label::before
+	border-color: #1E92FE
+	background-color: #1E92FE
+.payment_blc
+	@extend %block
+	.head
+		display: flex
+		align-items: center
+		padding: 0.417vw 2.03125vw 0.26vw
+		border-bottom: 0.104vw solid #E8ECF4
+		.select_payment
+			margin-right: 1.71875vw
+		.pic_blc
+			width: 3.333vw
+			margin-right: 1.042vw
+			img
+				width: 100%
+	.body
+		padding: 2.292vw 2.083vw 2.8125vw 2.03125vw
+		text-align: left		
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		label
+			width: 37.96875vw
+			@include font(1.25vw, 1.71875vw)
+			color: #00193F
+			span
+				color: #1E92FE
+			&.short
+				width: 17.96875vw
+		input
+			display: block
+			width: 100%
+			font-family: "Nunito Sans", sans-serif
+			@include font(1.5625vw, 2.135vw, 300)
+			background: #E8F2FF
+			border-radius: 0.365vw
+			padding: 0.729vw 1.09375vw 0.677vw
+			@include margin-block(0.417vw, 1.354vw)
+			color: #00193F
+			box-sizing: border-box
+.questions
+	@include padding-block(6.198vw, 4.01vw)
+	.container
+		.title
+			font-size: 1.771vw
+			font-weight: bold
+			line-height: 2.396vw
+			color: #1E92FE
+			margin-bottom: 0.573vw
+			padding-bottom: 2.396vw
+		.questions_items
+			display: flex
+			justify-content: space-between
+			flex-wrap: wrap
+			.item
+				width: 24.01vw
+				text-align: left
+				margin-bottom: 2.96875vw
+				.questions_title
+					@include font(1.09375vw, 1.51vw, bold)
+					color: #2C2E30
+					margin-bottom: 0.729vw
+				.questions_description
+					@include font(0.833vw, 1.458vw)
+				
+@import "pages/signin-signup-pages"
+@import "pages/homepage"
+@import "pages/jobs-page"
+@import "pages/network-page"
+@import "pages/grow-network"
+@import "pages/marketplace-page"
+@import "pages/marketplace-provider-profile"
+@import "pages/marketplace-explore.sass"
+@import "pages/company-page"
+@import "pages/jod-description-page"
+@import "pages/profile-page"
+@import "pages/popup"
+@import "pages/join-premium"
+@import "pages/saved-items"
+@import "pages/writing-sessions"
+@import "pages/dashboard"
+@import "pages/dashboard_1"
